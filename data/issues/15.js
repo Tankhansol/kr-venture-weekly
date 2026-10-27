@@ -1,19 +1,19 @@
 /*
- * 제15호 (2026년 8월 3주차) — 이전 사이트에서 옮긴 내용, 원문 대조 전
+ * 제15호 (2026년 8월 3주차) — 이전 사이트에서 옮긴 뒤 2026.10.27 원문 대조 반영
  */
 window.KVW_ISSUES = window.KVW_ISSUES || {};
 window.KVW_ISSUES[15] = {
   "week": "2026년 8월 3주차",
   "shortWeek": "8월 3주",
   "title": [
-    "상반기 국내 벤처투자 8.87조 원,",
-    "딥테크 세액공제 확대"
+    "상반기 국내 벤처투자 약 8.9조 원,",
+    "Infiforce $150M · Rillet $100M"
   ],
   "summary": "핵심 요약: 상반기 국내 벤처투자 8.87조 원 · 세법개정안 딥테크 세액공제 · CRETI 프롭테크 리포트 · 해외 딜 3건",
   "points": [
     {
       "tag": "Policy",
-      "text": "2026년 상반기 국내 벤처투자 8.87조 원, ICT 제조 +143%·전기/기계/장비 +90%"
+      "text": "2026년 상반기 국내 벤처투자 약 8.9조 원, 역대 최대(중기부)"
     },
     {
       "tag": "Policy",
@@ -21,23 +21,24 @@ window.KVW_ISSUES[15] = {
     },
     {
       "tag": "Deal",
-      "text": "Infiforce $150M · Rillet $100M Series C · Terra Industries $52M Seed"
+      "text": "Infiforce 약 $150M · Rillet $100M Series C($1B 밸류) · Terra Industries $52M Seed"
     }
   ],
   "articles": [
     {
       "type": "policy",
       "marker": "POLICY · 투자 통계",
-      "title": "2026년 상반기 국내 벤처투자 8.87조 원",
+      "title": "2026년 상반기 국내 벤처투자 약 8.9조 원, 역대 최대",
       "facts": [
-        "2026년 상반기 국내 벤처투자 8.87조 원(중기부 발표 기준)",
-        "ICT 제조 전년동기 대비 +143%, 전기/기계/장비 +90%"
+        "2026년 상반기 벤처투자 약 8.9조 원(중기부 발표), 상반기 기준 역대 최대",
+        "신규 벤처펀드 결성 약 8.4조 원",
+        "업종별 증감률(ICT 제조 +143%, 전기/기계/장비 +90%)은 원문 확인 불가"
       ],
       "sources": [
         {
-          "name": "WOWTALE",
-          "url": "https://en.wowtale.net/2026/08/21/234808/",
-          "date": "2026.08.21"
+          "name": "MTN",
+          "url": "https://news.mtn.co.kr/news-detail/2026081916041892045",
+          "date": "2026.08.19"
         }
       ]
     },
@@ -55,7 +56,8 @@ window.KVW_ISSUES[15] = {
           "url": "https://biz.chosun.com/en/en-industry/2026/08/07/Y7QYQWUX6ZAGVPBPDEQPW3L7VY/",
           "date": "2026.08.07"
         }
-      ]
+      ],
+      "pending": "[확인 필요: 세법개정안 원문(기획재정부 발표) 대조]"
     },
     {
       "type": "report",
@@ -71,22 +73,23 @@ window.KVW_ISSUES[15] = {
           "url": "https://creti.org/insights/whos-investing-in-proptech-inside-the-early-stage-capital-shaping-the-market-in-2026",
           "date": ""
         }
-      ]
+      ],
+      "pending": "[확인 필요: 원문 접근 불가로 내용 대조 못 함]"
     }
   ],
   "deals": [
     {
       "name": "Infiforce",
       "region": "해외",
-      "sector": "로봇 월드 모델",
+      "sector": "로봇 월드 모델(중국)",
       "round": "Series A/A+",
-      "note": "",
-      "investors": "지방 정부·자산운용사 연합",
-      "date": "",
+      "note": "원문 표기 \"약 $150M\"",
+      "investors": "원문 미기재",
+      "date": "2026.08.18",
       "usdM": 150,
       "source": {
-        "name": "Yutori Scouts",
-        "url": "https://scouts.yutori.com/68f22e10-d5fe-4e94-b1c8-9c6218cfdb2c"
+        "name": "AF.NET",
+        "url": "https://af.net/realtime/infiforce-secures-150m-to-advance-ego-native-world-model-for-robotics/"
       }
     },
     {
@@ -94,27 +97,27 @@ window.KVW_ISSUES[15] = {
       "region": "해외",
       "sector": "AI 네이티브 ERP·재무 결산",
       "round": "Series C",
-      "note": "",
-      "investors": "원문 미기재",
-      "date": "",
+      "note": "밸류 $1B",
+      "investors": "ICONIQ(리드)",
+      "date": "2026.08.18",
       "usdM": 100,
       "source": {
-        "name": "Startups Gallery",
-        "url": null
+        "name": "Pulse 2.0",
+        "url": "https://pulse2.com/rillet-raises-100-million-series-c-at-1-billion-valuation-as-ai-native-erp-tops-600-customers/"
       }
     },
     {
       "name": "Terra Industries",
       "region": "해외",
-      "sector": "국방 인프라 무인화",
+      "sector": "자율 방산 시스템(나이지리아)",
       "round": "Seed",
       "note": "",
-      "investors": "원문 미기재",
-      "date": "",
+      "investors": "8VC·Silent Ventures 등",
+      "date": "2026.08.17",
       "usdM": 52,
       "source": {
-        "name": "Yutori Scouts",
-        "url": "https://scouts.yutori.com/68f22e10-d5fe-4e94-b1c8-9c6218cfdb2c"
+        "name": "SiliconAngle",
+        "url": "https://siliconangle.com/2026/08/17/african-defense-tech-startup-terra-industries-raises-52m/"
       }
     }
   ],
@@ -123,5 +126,5 @@ window.KVW_ISSUES[15] = {
     "딥테크 양산 세액공제·제3자 M&A 세제로 후기 기업 회수 경로 다각화 기대"
   ],
   "no": 15,
-  "status": "unverified"
+  "correction": "2026.10.27 원문 대조 후 정정: 상반기 벤처투자를 중기부 발표 기준 \"약 8.9조 원\"으로 표기(업종별 증감률은 원문 확인 불가), Infiforce 투자자(\"지방 정부·자산운용사 연합\") 원문 미확인으로 삭제, 딜 출처·리드 투자자·날짜 보완. 세법개정안·CRETI 리포트는 원문 접근 불가"
 };

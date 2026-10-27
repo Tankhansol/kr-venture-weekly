@@ -1,5 +1,5 @@
 /*
- * 제17호 (2026년 9월 1주차) — 이전 사이트에서 옮긴 내용, 원문 대조 전
+ * 제17호 (2026년 9월 1주차) — 이전 사이트에서 옮긴 뒤 2026.10.27 원문 대조 반영
  */
 window.KVW_ISSUES = window.KVW_ISSUES || {};
 window.KVW_ISSUES[17] = {
@@ -13,7 +13,7 @@ window.KVW_ISSUES[17] = {
   "points": [
     {
       "tag": "Policy",
-      "text": "15개 증권사 IB 연합 1조 원 벤처 세컨더리 펀드 출범, 전북 1,000억 원 모펀드 가동"
+      "text": "증권업계 3년간 1조 원 벤처 세컨더리 투자(9개사 개별 7,000억 원 + 15개사 공동펀드 3,000억 원)"
     },
     {
       "tag": "Report",
@@ -28,35 +28,39 @@ window.KVW_ISSUES[17] = {
     {
       "type": "policy",
       "marker": "POLICY · 세컨더리",
-      "title": "15개 증권사 연합 1조 원 벤처 세컨더리 펀드 출범",
+      "title": "증권업계 3년간 1조 원 벤처 세컨더리 투자",
       "facts": [
-        "국내 15개 증권사 IB 부문 연합 1조 원 규모 벤처 세컨더리 펀드 출범",
-        "전북 1,000억 원 모펀드 추가 가동"
+        "발행어음 9개 증권사 개별 투자 약 7,000억 원, 영업이익 상위 15개 증권사 공동펀드 약 3,000억 원",
+        "향후 3년간 투자, 본격 투자는 2027년 초 예상"
       ],
       "sources": [
+        {
+          "name": "SBS Biz",
+          "url": "https://biz.sbs.co.kr/amp/article/20000339051",
+          "date": "2026.10.08"
+        },
         {
           "name": "우진이법률사무소",
           "url": "https://www.woojinleelaw.com/288",
           "date": ""
         }
-      ]
+      ],
+      "pending": "[확인 필요: 전북 1,000억 원 모펀드 원문]"
     },
     {
       "type": "report",
       "marker": "REPORT · 프롭테크",
-      "title": "Crunchbase H1 2026: 글로벌 프롭테크 투자 $4.53B",
+      "title": "Crunchbase: 2026년 상반기 프롭테크 투자 $4.53B",
       "facts": [
-        "H1 2026 글로벌 프롭테크 투자 $4.53B",
-        "임대·시공·관리 업무를 AI로 대행하는 기업 중심 투자"
+        "2026년 상반기 프롭테크 투자 $4.53B, 231건"
       ],
       "sources": [
         {
-          "name": "Crunchbase News",
-          "url": null,
-          "date": ""
+          "name": "Value Add Pulse (Crunchbase News 인용)",
+          "url": "https://valueaddvc.com/pulse/proptech-funding-4-53-billion-h1-2026-data-2026",
+          "date": "2026.09.01"
         }
-      ],
-      "pending": "[확인 필요: 원문 기사 URL·기사일]"
+      ]
     }
   ],
   "deals": [
@@ -66,26 +70,26 @@ window.KVW_ISSUES[17] = {
       "sector": "중장비 자율주행(ETH 취리히 스핀오프)",
       "round": "Series A",
       "note": "",
-      "investors": "SoftBank(리드)",
-      "date": "",
+      "investors": "SoftBank(단독)",
+      "date": "2026.08.17",
       "usdM": 200,
       "source": {
-        "name": "Cleary Gottlieb",
-        "url": null
+        "name": "Tech.eu",
+        "url": "https://tech.eu/2026/08/17/softbank-invests-200m-in-swiss-robotics-startup-gravis-robotics/"
       }
     },
     {
       "name": "UBTECH Robotics",
       "region": "해외",
       "sector": "휴머노이드 관절 모듈",
-      "round": "Equity",
-      "note": "",
+      "round": "미기재",
+      "note": "상장사(홍콩)",
       "investors": "원문 미기재",
-      "date": "",
+      "date": "2026.09.06",
       "usdM": 13.9,
       "source": {
-        "name": "Dealroom",
-        "url": null
+        "name": "IndianWeb2",
+        "url": "https://www.indianweb2.com/2026/09/chinas-ubtech-lands-139m-for.html"
       }
     }
   ],
@@ -94,5 +98,5 @@ window.KVW_ISSUES[17] = {
     "비정형 현장 자율주행과 휴머노이드 부품 공급망 계층에 주목"
   ],
   "no": 17,
-  "status": "unverified"
+  "correction": "2026.10.27 원문 대조 후 정정: 1조 원 세컨더리를 \"15개 증권사 연합 펀드\"에서 \"9개사 개별 7,000억 원 + 15개사 공동펀드 3,000억 원\"으로 정정, Gravis·UBTECH 출처·날짜 보완. 전북 1,000억 원 모펀드는 원문 확인 불가"
 };

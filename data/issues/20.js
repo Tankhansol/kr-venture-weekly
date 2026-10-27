@@ -1,19 +1,19 @@
 /*
- * 제20호 (2026년 9월 4주차) — 이전 사이트에서 옮긴 내용, 원문 대조 전
+ * 제20호 (2026년 9월 4주차) — 이전 사이트에서 옮긴 뒤 2026.10.27 원문 대조 반영
  */
 window.KVW_ISSUES = window.KVW_ISSUES || {};
 window.KVW_ISSUES[20] = {
   "week": "2026년 9월 4주차",
   "shortWeek": "9월 4주",
   "title": [
-    "KKR 한국 $3B · SK hynix Ventures 출범,",
-    "건설·빌딩 AI 딜 3건"
+    "KKR 한국 투자 역대 최대 · SK hynix Ventures 출범,",
+    "Adaptive $30M Series B"
   ],
   "summary": "핵심 요약: KKR 한국 투자 계획 · SK hynix Ventures 실리콘밸리 출범 · 벤처투자법 개정안 국무회의 의결 · 해외 딜 3건",
   "points": [
     {
       "tag": "Policy",
-      "text": "KKR 2026년 한국 투자 $3B 계획, SK hynix Ventures 실리콘밸리 CVC 출범"
+      "text": "KKR 2026년 한국 누적 투자 약 $3B(연간 역대 최대), SK hynix Ventures 출범"
     },
     {
       "tag": "Policy",
@@ -28,86 +28,91 @@ window.KVW_ISSUES[20] = {
     {
       "type": "policy",
       "marker": "POLICY · 국내 자본시장",
-      "title": "KKR 한국 $3B 투자 계획, SK hynix Ventures 실리콘밸리 출범",
+      "title": "KKR 한국 투자 연간 역대 최대, SK hynix Ventures 실리콘밸리 출범",
       "facts": [
-        "KKR 2026년 한국 투자 $3B 계획, AI 데이터센터·반도체 공급망 중심",
-        "SK hynix Ventures 실리콘밸리 CVC로 출범"
+        "KKR 2026년 한국 누적 투자 약 $3B(약 4.1조 원), 연간 기준 역대 최대",
+        "삼성SDS 전환사채 약 $880M 인수, SK텔레콤 데이터센터 사업 투자 참여",
+        "SK hynix, 실리콘밸리에서 CVC 브랜드 SK hynix Ventures 출범(2026.09.18)"
       ],
       "sources": [
         {
-          "name": "SK hynix 뉴스룸",
-          "url": null,
-          "date": ""
+          "name": "더팩트",
+          "url": "https://news.tf.co.kr/read/economy/2369363.htm",
+          "date": "2026.09.27"
+        },
+        {
+          "name": "TechNode Global",
+          "url": "https://technode.global/prnasia/sk-hynix-launches-sk-hynix-ventures-in-silicon-valley-to-expand-global-ai-ecosystem-investment/",
+          "date": "2026.09.18"
         }
-      ],
-      "pending": "[확인 필요: 원문 기사 URL·기사일]"
+      ]
     },
     {
       "type": "policy",
       "marker": "POLICY · 벤처투자법",
       "title": "벤처투자법 개정안 국무회의 의결",
       "facts": [
-        "VC 대주주의 금전 수수 금지",
-        "불공정 투자계약 제재 강화"
+        "벤처투자회사 대주주의 부당한 영향력 행사 목적 금전 제공·수수 금지",
+        "불공정 투자계약 조건 제한과 행정처분 근거 마련",
+        "2026.09.22 국무회의 의결, 2027.03.30 시행 예정"
       ],
       "sources": [
         {
-          "name": "연합뉴스",
-          "url": null,
-          "date": ""
+          "name": "SBS Biz",
+          "url": "https://biz.sbs.co.kr/amp/article/20000336124",
+          "date": "2026.09.22"
         }
-      ],
-      "pending": "[확인 필요: 원문 기사 URL·기사일]"
+      ]
     }
   ],
   "deals": [
     {
       "name": "Adaptive",
       "region": "해외",
-      "sector": "건설 정산·회계 AI",
+      "sector": "건설 회계 에이전트 AI",
       "round": "Series B",
       "note": "",
-      "investors": "원문 미기재",
-      "date": "",
+      "investors": "Tidemark(리드)",
+      "date": "2026.09.17",
       "usdM": 30,
       "source": {
-        "name": "VCA Online",
-        "url": null
+        "name": "Construction Dive",
+        "url": "https://www.constructiondive.com/press-release/20260917-adaptive-raises-30-million-series-b-led-by-tidemark-to-bring-agentic-accou/"
       }
     },
     {
       "name": "PicoJool",
       "region": "해외",
-      "sector": "데이터센터 광 칩셋",
+      "sector": "AI 데이터센터 광 칩(VCSEL)",
       "round": "Series A",
       "note": "",
-      "investors": "원문 미기재",
-      "date": "",
+      "investors": "Socratic Partners(리드)",
+      "date": "2026.09.24",
       "usdM": 27.5,
       "source": {
-        "name": "VCA Online",
-        "url": null
+        "name": "Pulse 2.0",
+        "url": "https://pulse2.com/picojool-raises-27-5-million-series-a-led-by-socratic-partners/"
       }
     },
     {
       "name": "Trebellar",
       "region": "해외",
-      "sector": "상업용 빌딩 운영 AI",
+      "sector": "기업 부동산 의사결정 AI",
       "round": "Series A",
       "note": "",
-      "investors": "원문 미기재",
-      "date": "",
+      "investors": "Blossom Capital(리드)",
+      "date": "2026.10.04",
       "usdM": 18,
       "source": {
-        "name": "VCA Online",
-        "url": null
+        "name": "Pulse 2.0",
+        "url": "https://pulse2.com/trebellar-raises-18-million-series-a-to-bring-ai-to-corporate-real-estate-management/"
       }
     }
   ],
   "insight": [
     "KKR 진입으로 국내 데이터센터·반도체 공급망 자산의 밸류에이션 기준 상향 가능성",
-    "건설 백오피스·빌딩 운영 AI와 데이터센터 광 칩셋 계층에 주목"
+    "건설 백오피스 AI와 데이터센터 광 칩 계층에 주목"
   ],
   "no": 20,
-  "status": "unverified"
+  "correction": "2026.10.27 원문 대조 후 정정: KKR $3B를 \"2026년 계획\"에서 \"2026년 누적 투자\"로 정정, Trebellar 사업 설명(빌딩 에너지 → 기업 부동산 의사결정 AI) 정정, 출처·날짜 보완"
 };
