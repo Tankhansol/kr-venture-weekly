@@ -29,6 +29,7 @@
     var latest = A.latest ? base + 'issues/issue-' + pad2(A.latest) + '.html' : base + 'index.html';
     var items = [
       { key: 'weekly', text: 'Weekly', href: latest },
+      { key: 'deals', text: 'Deals', href: base + 'deals.html' },
       { key: 'archive', text: 'Archive', href: base + 'index.html#archive' },
       { key: 'data', text: 'Monthly Data', href: base + 'index.html#data' }
     ];

@@ -1,5 +1,5 @@
 /*
- * 제10호 (2026년 6월 4주차) — 이전 사이트에서 옮긴 뒤 2026.10.27 원문 대조 반영
+ * 제10호 (2026년 6월 4주차) — 이전 사이트에서 옮긴 뒤 2026.10.27 원문 대조 반영, 원문 확인 불가 항목 삭제
  */
 window.KVW_ISSUES = window.KVW_ISSUES || {};
 window.KVW_ISSUES[10] = {
@@ -31,8 +31,7 @@ window.KVW_ISSUES[10] = {
       "title": "넥스트라이즈 2026(6.18~19, 코엑스) 개최",
       "facts": [
         "30개국 스타트업 약 1,700개사 참여, AI·바이오·핀테크 등 미래산업 스타트업 540여 개사 전시",
-        "한국무역협회·KDB산업은행 주최, 벤처기업협회·한국벤처캐피탈협회 공동 주관",
-        "원문의 \"피지컬 AI 분야 참가 확대\"는 원문 확인 불가"
+        "한국무역협회·KDB산업은행 주최, 벤처기업협회·한국벤처캐피탈협회 공동 주관"
       ],
       "sources": [
         {
@@ -57,28 +56,6 @@ window.KVW_ISSUES[10] = {
           "date": "2026.06.16"
         }
       ]
-    },
-    {
-      "type": "report",
-      "marker": "REPORT · AI 비용",
-      "title": "기업 AI 비용 관리: AIVI 지표 도입과 토큰 압축 도구",
-      "facts": [
-        "AI 투입 대비 산출을 측정하는 AIVI 등 지표 도입 확산",
-        "데이터 압축 오픈소스 도구로 토큰 비용 최대 90% 절감 사례 소개"
-      ],
-      "sources": [
-        {
-          "name": "ITWorld",
-          "url": "https://www.itworld.co.kr/article/4187067/",
-          "date": ""
-        },
-        {
-          "name": "CIO",
-          "url": "https://www.cio.com/article/4186639/",
-          "date": ""
-        }
-      ],
-      "pending": "[확인 불가: 원문 보고서·기사를 찾지 못함]"
     },
     {
       "type": "report",
@@ -193,5 +170,5 @@ window.KVW_ISSUES[10] = {
     "특정 해외 AI API 의존에 따른 지정학적 리스크로 소버린 AI 수요 확대"
   ],
   "no": 10,
-  "correction": "2026.10.27 원문 대조 후 정정: 넥스트라이즈 \"540여 개 기업 참여\"를 \"약 1,700개사 참여, 540여 개사 전시\"로 정정, AI 주권 항목에 계기(Anthropic 모델 해외 접근 차단) 명시와 출처 교체, SpaceX–Cursor는 합의 시점(6월)과 종결(8월) 구분, Sarvam은 $300M Series B 1차 클로징으로 명시, Baseten 리드 투자자 정정(Spark Capital 단독 리드 → Altimeter·Conviction 등 공동 리드 보도), 각 딜 출처 보완. 피지컬 AI 참가 확대·AIVI·토큰 압축 항목은 원문 확인 불가"
+  "correction": "2026.10.27 원문 대조 후 정정: 넥스트라이즈 \"540여 개 기업 참여\"를 \"약 1,700개사 참여, 540여 개사 전시\"로 정정, AI 주권 항목에 계기(Anthropic 모델 해외 접근 차단) 명시와 출처 교체, SpaceX–Cursor는 합의 시점(6월)과 종결(8월) 구분, Sarvam은 $300M Series B 1차 클로징으로 명시, Baseten 리드 투자자 정정(Spark Capital 단독 리드 → Altimeter·Conviction 등 공동 리드 보도), 각 딜 출처 보완. 피지컬 AI 참가 확대·AIVI·토큰 압축 항목은 원문 확인 불가. 원문 확인 불가 항목은 2026.10.27 사이트에서 삭제"
 };

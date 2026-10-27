@@ -1,5 +1,5 @@
 /*
- * 제22호 (2026년 10월 2주차) — 이전 사이트에서 옮긴 뒤 2026.10.27 원문 대조 반영
+ * 제22호 (2026년 10월 2주차) — 이전 사이트에서 옮긴 뒤 2026.10.27 원문 대조 반영, 원문 확인 불가 항목 삭제
  */
 window.KVW_ISSUES = window.KVW_ISSUES || {};
 window.KVW_ISSUES[22] = {
@@ -57,22 +57,6 @@ window.KVW_ISSUES[22] = {
           "date": "2026.10.07"
         }
       ]
-    },
-    {
-      "type": "report",
-      "marker": "REPORT · PE 실사",
-      "title": "Open Future Forum: PE 실사 시 AI 연산비(AI Debt) EBITDA 차감 방법론",
-      "facts": [
-        "PE 딜 실사에서 외부 AI API 비용을 EBITDA에서 차감하는 방법론 제시"
-      ],
-      "sources": [
-        {
-          "name": "Open Future Forum",
-          "url": null,
-          "date": ""
-        }
-      ],
-      "pending": "[확인 불가: 원문 보고서·기사를 찾지 못함]"
     }
   ],
   "deals": [
@@ -120,9 +104,8 @@ window.KVW_ISSUES[22] = {
     }
   ],
   "insight": [
-    "외부 AI API 비용을 EBITDA에서 차감했을 때 수익성이 급락하는 기업은 투자 보류 검토 대상",
     "로봇 학습 데이터 계층과 오프라인 고정비를 줄이는 빌딩·임대 AI에 주목"
   ],
   "no": 22,
-  "correction": "2026.10.27 원문 대조 후 정정: 프론티어 AI는 \"$3.94B 사업 가동\"이 아니라 예산 미정의 추진 계획, K-GX는 AI가 아닌 녹색전환 계획(10년 1,000조 원)으로 정정. Mecka 사업 설명 정정, RentBetter 라운드명 삭제. Open Future Forum 백서는 원문 확인 불가"
+  "correction": "2026.10.27 원문 대조 후 정정: 프론티어 AI는 \"$3.94B 사업 가동\"이 아니라 예산 미정의 추진 계획, K-GX는 AI가 아닌 녹색전환 계획(10년 1,000조 원)으로 정정. Mecka 사업 설명 정정, RentBetter 라운드명 삭제. Open Future Forum 백서는 원문 확인 불가. 원문 확인 불가 항목은 2026.10.27 사이트에서 삭제"
 };

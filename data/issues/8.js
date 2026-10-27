@@ -1,5 +1,5 @@
 /*
- * 제8호 (2026년 6월 2주차) — 이전 사이트에서 옮긴 뒤 2026.10.27 원문 대조 반영
+ * 제8호 (2026년 6월 2주차) — 이전 사이트에서 옮긴 뒤 2026.10.27 원문 대조 반영, 원문 확인 불가 항목 삭제
  */
 window.KVW_ISSUES = window.KVW_ISSUES || {};
 window.KVW_ISSUES[8] = {
@@ -17,7 +17,7 @@ window.KVW_ISSUES[8] = {
     },
     {
       "tag": "Report",
-      "text": "AI 가치 지수(AIVI) 제안, AI 부채·바이브 코딩 품질 문제 지적"
+      "text": "국민성장펀드, 퓨리오사AI에 약 8,000억 원 직접투자"
     },
     {
       "tag": "Deal",
@@ -31,8 +31,7 @@ window.KVW_ISSUES[8] = {
       "title": "삼성중공업, 부유식 해상 데이터센터(FDC) 사업 추진",
       "facts": [
         "50MW급 FDC 설계로 ABS·Lloyd's Register 기본승인(AiP) 획득, 해수 냉각 방식",
-        "2026.06.03 그리스 Capital·Lloyd's Register와 3자 사업 협약, Supermicro와 공동개발 협약",
-        "원문의 \"LNG 냉열 활용 냉각\"은 원문 확인 불가(확인한 기사는 해수 냉각으로 기재)"
+        "2026.06.03 그리스 Capital·Lloyd's Register와 3자 사업 협약, Supermicro와 공동개발 협약"
       ],
       "sources": [
         {
@@ -53,8 +52,7 @@ window.KVW_ISSUES[8] = {
       "title": "국민성장펀드, 퓨리오사AI에 약 8,000억 원 직접투자",
       "facts": [
         "첨단전략산업기금 3,700억 원·산업은행 300억 원·민간(네이버·한국투자파트너스 등) 4,000억 원",
-        "투자 전 기업가치 약 3조 원, 2026.05.28 기금운용심의회 승인",
-        "원문의 \"수요 검증 전 투자 비판\"은 원문 확인 불가"
+        "투자 전 기업가치 약 3조 원, 2026.05.28 기금운용심의회 승인"
       ],
       "sources": [
         {
@@ -63,28 +61,6 @@ window.KVW_ISSUES[8] = {
           "date": "2026.05.28"
         }
       ]
-    },
-    {
-      "type": "report",
-      "marker": "REPORT · AI 가치 평가",
-      "title": "AI 가치 지수(AIVI) 제안과 AI 부채 경고",
-      "facts": [
-        "실질 산출·기술 거버넌스·산업별 가중치로 구성된 AIVI 제안",
-        "프롬프트·API 의존성·RAG 데이터 오염 등 AI 부채 누적 지적"
-      ],
-      "sources": [
-        {
-          "name": "AI타임스",
-          "url": "https://www.aitimes.com/news/articleView.html?idxno=211272",
-          "date": ""
-        },
-        {
-          "name": "AI타임스",
-          "url": "https://www.aitimes.com/news/articleView.html?idxno=210926",
-          "date": ""
-        }
-      ],
-      "pending": "[확인 불가: 원문 보고서·기사를 찾지 못함]"
     }
   ],
   "deals": [
@@ -150,5 +126,5 @@ window.KVW_ISSUES[8] = {
     "전력·냉각·모니터링 등 AI 인프라 관제 영역으로 자본 이동"
   ],
   "no": 8,
-  "correction": "2026.10.27 원문 대조 후 정정: 삼성중공업 해상 데이터센터의 냉각 방식(LNG 냉열 → 해수 냉각) 정정과 협약 내용 보완, 퓨리오사AI 8,000억 원 재원 구성 명시, Anthropic·Supabase 리드 투자자와 출처 보완. 퓨리오사AI 투자 비판·AIVI·AI 부채 항목은 원문 확인 불가"
+  "correction": "2026.10.27 원문 대조 후 정정: 삼성중공업 해상 데이터센터의 냉각 방식(LNG 냉열 → 해수 냉각) 정정과 협약 내용 보완, 퓨리오사AI 8,000억 원 재원 구성 명시, Anthropic·Supabase 리드 투자자와 출처 보완. 퓨리오사AI 투자 비판·AIVI·AI 부채 항목은 원문 확인 불가. 원문 확인 불가 항목은 2026.10.27 사이트에서 삭제"
 };

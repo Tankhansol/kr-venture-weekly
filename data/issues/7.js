@@ -1,5 +1,5 @@
 /*
- * 제7호 (2026년 5월 4주차) — 이전 사이트에서 옮긴 뒤 2026.10.27 원문 대조 반영
+ * 제7호 (2026년 5월 4주차) — 이전 사이트에서 옮긴 뒤 2026.10.27 원문 대조 반영, 원문 확인 불가 항목 삭제
  */
 window.KVW_ISSUES = window.KVW_ISSUES || {};
 window.KVW_ISSUES[7] = {
@@ -27,28 +27,6 @@ window.KVW_ISSUES[7] = {
   "articles": [
     {
       "type": "report",
-      "marker": "REPORT · AI 부채",
-      "title": "AI 부채와 바이브 코딩 품질 문제",
-      "facts": [
-        "프롬프트·모델 의존성·검색 데이터 오염 등 AI 부채 누적 지적",
-        "자연어 지시에 의존한 코딩으로 유지보수가 어려운 코드 양산 우려"
-      ],
-      "sources": [
-        {
-          "name": "AI타임스",
-          "url": "https://www.aitimes.com/news/articleView.html?idxno=210926",
-          "date": ""
-        },
-        {
-          "name": "AI타임스",
-          "url": "https://www.aitimes.com/news/articleView.html?idxno=210924",
-          "date": ""
-        }
-      ],
-      "pending": "[확인 불가: 원문 보고서·기사를 찾지 못함]"
-    },
-    {
-      "type": "report",
       "marker": "REPORT · AI ROI",
       "title": "AI 투자 회수 지연: PoC 88% 실서비스 미진입(IDC), 95% 손익 성과 미달(MIT)",
       "facts": [
@@ -70,8 +48,7 @@ window.KVW_ISSUES[7] = {
       "title": "Anthropic, xAI 컴퓨팅 용량에 월 $1.25B 지급 계약",
       "facts": [
         "Anthropic이 xAI(Colossus)에 월 $1.25B(연 $15B) 지급, 계약 기간 2029.05까지, 총 $40B 이상 가능",
-        "SpaceX S-1 공시(2026.05 중순)로 공개",
-        "원문의 \"마이크론·삼성전자·SK하이닉스 인프라 파트너 참여\"는 원문 확인 불가"
+        "SpaceX S-1 공시(2026.05 중순)로 공개"
       ],
       "sources": [
         {
@@ -80,22 +57,6 @@ window.KVW_ISSUES[7] = {
           "date": "2026.05.25"
         }
       ]
-    },
-    {
-      "type": "report",
-      "marker": "REPORT · 보안",
-      "title": "양자 컴퓨팅 대비 PQC 전환",
-      "facts": [
-        "RSA-2048 무력화 가능 양자 컴퓨팅 15~30년 내 도래 전망"
-      ],
-      "sources": [
-        {
-          "name": "ITWorld",
-          "url": "https://www.itworld.co.kr/article/4173473/",
-          "date": ""
-        }
-      ],
-      "pending": "[확인 불가: 원문 보고서·기사를 찾지 못함]"
     }
   ],
   "deals": [
@@ -147,5 +108,5 @@ window.KVW_ISSUES[7] = {
     "투자 실사 시 프롬프트 버전 관리와 추론 과정 설명 가능성 점검 필요"
   ],
   "no": 7,
-  "correction": "2026.10.27 원문 대조 후 정정: ROI 수치의 출처를 항목별로 정정(88%는 IDC PoC 기준, 95%는 MIT, 회수 기간은 Deloitte), xAI–Anthropic 계약은 Anthropic이 지급하는 구조와 기간(2029.05까지) 명시, Anthropic 딜 출처 보완. AI 부채·PQC·메모리 3사 참여 항목은 원문 확인 불가"
+  "correction": "2026.10.27 원문 대조 후 정정: ROI 수치의 출처를 항목별로 정정(88%는 IDC PoC 기준, 95%는 MIT, 회수 기간은 Deloitte), xAI–Anthropic 계약은 Anthropic이 지급하는 구조와 기간(2029.05까지) 명시, Anthropic 딜 출처 보완. AI 부채·PQC·메모리 3사 참여 항목은 원문 확인 불가. 원문 확인 불가 항목은 2026.10.27 사이트에서 삭제"
 };

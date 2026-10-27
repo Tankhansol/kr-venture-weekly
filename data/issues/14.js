@@ -1,5 +1,5 @@
 /*
- * 제14호 (2026년 7월 3주차) — 이전 사이트에서 옮긴 뒤 2026.10.27 원문 대조 반영
+ * 제14호 (2026년 7월 3주차) — 이전 사이트에서 옮긴 뒤 2026.10.27 원문 대조 반영, 원문 확인 불가 항목 삭제
  */
 window.KVW_ISSUES = window.KVW_ISSUES || {};
 window.KVW_ISSUES[14] = {
@@ -53,8 +53,7 @@ window.KVW_ISSUES[14] = {
       "marker": "REPORT · 글로벌 VC",
       "title": "2026년 상반기 글로벌 스타트업 투자 $510B, 역대 최대",
       "facts": [
-        "2026년 상반기 글로벌 스타트업 투자 $510B(Crunchbase 집계), 역대 최대",
-        "로보틱스 $23B 유입 수치는 원문 확인 불가"
+        "2026년 상반기 글로벌 스타트업 투자 $510B(Crunchbase 집계), 역대 최대"
       ],
       "sources": [
         {
@@ -66,22 +65,16 @@ window.KVW_ISSUES[14] = {
     },
     {
       "type": "report",
-      "marker": "REPORT · 프롭테크",
-      "title": "AI 프롭테크 백서: 건설 자동화 기업 Bedrock Robotics $1.75B 밸류",
+      "marker": "REPORT · 건설 로보틱스",
+      "title": "건설 자동화 기업 Bedrock Robotics $1.75B 밸류",
       "facts": [
-        "Bedrock Robotics, $270M Series B로 $1.75B 밸류 인정(2026.02), Alphabet·NVIDIA 참여",
-        "\"2026년 신규 프롭테크 유니콘 4개사\" 수치는 원문 확인 불가"
+        "Bedrock Robotics, $270M Series B로 $1.75B 밸류 인정(2026.02), Alphabet·NVIDIA 참여"
       ],
       "sources": [
         {
           "name": "Pulse 2.0",
           "url": "https://pulse2.com/bedrock-robotics-270-million-series-b-at-1-75-billion-valuation",
           "date": "2026.02"
-        },
-        {
-          "name": "AI for Proptech",
-          "url": "https://aiforproptech.com/blog/ai-proptech-landscape-2026/",
-          "date": ""
         }
       ]
     }
@@ -121,5 +114,5 @@ window.KVW_ISSUES[14] = {
     "건설·제조 대기업 CVC의 피지컬 AI 자산 선점, 전략적 인수가 주요 회수 경로"
   ],
   "no": 14,
-  "correction": "2026.10.27 원문 대조 후 정정: 벤처투자법 항목을 시행령(7.1 시행)과 1월 중기부 발표로 나눠 정정(투자의무 5년 연장은 1월 발표 사항), Bedrock Robotics 밸류는 2026.02 Series B 기준으로 명시, 홀리데이로보틱스 출처 보완. 로보틱스 $23B·프롭테크 유니콘 4개사 수치는 원문 확인 불가"
+  "correction": "2026.10.27 원문 대조 후 정정: 벤처투자법 항목을 시행령(7.1 시행)과 1월 중기부 발표로 나눠 정정(투자의무 5년 연장은 1월 발표 사항), Bedrock Robotics 밸류는 2026.02 Series B 기준으로 명시, 홀리데이로보틱스 출처 보완. 로보틱스 $23B·프롭테크 유니콘 4개사 수치는 원문 확인 불가. 원문 확인 불가 항목은 2026.10.27 사이트에서 삭제"
 };

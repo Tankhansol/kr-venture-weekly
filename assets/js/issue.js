@@ -61,6 +61,7 @@
   }
 
   function dealTable() {
+    if (!deals.length) return '';
     return '<div class="table-box"><table class="deal-table" style="min-width:760px"><thead><tr>' +
       '<th>기업</th><th>섹터</th><th>라운드</th><th class="r">금액</th><th>주요 투자자</th><th>발표일 · 출처</th>' +
       '</tr></thead><tbody>' + deals.map(function (d) {

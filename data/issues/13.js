@@ -1,5 +1,5 @@
 /*
- * 제13호 (2026년 7월 2주차) — 이전 사이트에서 옮긴 뒤 2026.10.27 원문 대조 반영
+ * 제13호 (2026년 7월 2주차) — 이전 사이트에서 옮긴 뒤 2026.10.27 원문 대조 반영, 원문 확인 불가 항목 삭제
  */
 window.KVW_ISSUES = window.KVW_ISSUES || {};
 window.KVW_ISSUES[13] = {
@@ -9,7 +9,7 @@ window.KVW_ISSUES[13] = {
     "상반기 국내 IPO 감소,",
     "Proxima Fusion €411M"
   ],
-  "summary": "핵심 요약: 상반기 국내 IPO 감소 · AI 산업·CVC 동향 · 해외 딜 3건",
+  "summary": "핵심 요약: 상반기 국내 IPO 감소 · AI 대형 라운드 · 해외 딜 3건",
   "points": [
     {
       "tag": "Policy",
@@ -30,8 +30,7 @@ window.KVW_ISSUES[13] = {
       "marker": "POLICY · IPO",
       "title": "2026년 상반기 국내 신규 상장 17곳, 전년 대비 55% 감소",
       "facts": [
-        "2026년 상반기 신규 상장 17곳, 전년 대비 55% 감소",
-        "원문의 \"1~5월 15개사, 60% 감소\"와 \"펀드 만기 8년·IPO 소요 13년\" 수치는 원문 확인 불가"
+        "2026년 상반기 신규 상장 17곳, 전년 대비 55% 감소"
       ],
       "sources": [
         {
@@ -42,47 +41,12 @@ window.KVW_ISSUES[13] = {
       ]
     },
     {
-      "type": "policy",
-      "marker": "POLICY · 모태펀드",
-      "title": "한국벤처투자, 자펀드 GP 투자심의위원회 참관 지침 수립",
-      "facts": [
-        "모태펀드 자펀드 위탁 GP의 투자심의위원회 참관 지침 수립(2026.07)",
-        "GP 자율성 위축 우려 제기"
-      ],
-      "sources": [
-        {
-          "name": "블로터",
-          "url": "https://www.bloter.net/news/articleView.html?idxno=667104",
-          "date": ""
-        }
-      ],
-      "pending": "[확인 불가: 원문 보고서·기사를 찾지 못함]"
-    },
-    {
       "type": "report",
-      "marker": "REPORT · AI 산업",
-      "title": "오케스트레이션 계층 흡수와 AI 네이티브 조직",
-      "facts": [
-        "OpenAI·구글의 차세대 모델이 외부 오케스트레이션 계층을 흡수할 계획",
-        "하버드 백서: AI 네이티브 조직의 인력 25% 절감 사례"
-      ],
-      "sources": [
-        {
-          "name": "AI타임스",
-          "url": "https://www.aitimes.com/news/articleView.html?idxno=212582",
-          "date": ""
-        }
-      ],
-      "pending": "[확인 불가: 원문 보고서·기사를 찾지 못함]"
-    },
-    {
-      "type": "report",
-      "marker": "REPORT · CVC",
-      "title": "NVentures(엔비디아 CVC) 관련 대형 라운드",
+      "marker": "REPORT · AI",
+      "title": "Prime Intellect·Waabi AI 대형 라운드",
       "facts": [
         "Prime Intellect, $130M Series A로 $1B 밸류 인정",
-        "Waabi는 2026.01 $1B 조달(원문의 \"$750M\"은 이전 협상 보도 수치)",
-        "NVentures의 각 라운드 주도 여부는 원문 확인 불가"
+        "Waabi는 2026.01 $1B 조달(원문의 \"$750M\"은 이전 협상 보도 수치)"
       ],
       "sources": [
         {
@@ -147,5 +111,5 @@ window.KVW_ISSUES[13] = {
     "독점 데이터나 워크플로 결합력이 없는 래퍼형 AI 툴은 투자 신중"
   ],
   "no": 13,
-  "correction": "2026.10.27 원문 대조 후 정정: IPO 감소 수치를 확인된 상반기 기준(17곳, 55% 감소)으로 교체, Waabi 조달액($750M → 2026.01 $1B) 정정, Proxima Fusion 리드 투자자와 밸류 통화 정정, Gradium $100M은 시드 누적액으로 명시, Norm 라운드명(Series C) 보완. 모태펀드 투심위 참관·오케스트레이션 흡수·J-스페이스 항목은 원문 확인 불가"
+  "correction": "2026.10.27 원문 대조 후 정정: IPO 감소 수치를 확인된 상반기 기준(17곳, 55% 감소)으로 교체, Waabi 조달액($750M → 2026.01 $1B) 정정, Proxima Fusion 리드 투자자와 밸류 통화 정정, Gradium $100M은 시드 누적액으로 명시, Norm 라운드명(Series C) 보완. 모태펀드 투심위 참관·오케스트레이션 흡수·J-스페이스 항목은 원문 확인 불가. 원문 확인 불가 항목은 2026.10.27 사이트에서 삭제"
 };

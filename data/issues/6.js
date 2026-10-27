@@ -1,5 +1,5 @@
 /*
- * 제6호 (2026년 5월 3주차) — 이전 사이트에서 옮긴 뒤 2026.10.27 원문 대조 반영
+ * 제6호 (2026년 5월 3주차) — 이전 사이트에서 옮긴 뒤 2026.10.27 원문 대조 반영, 원문 확인 불가 항목 삭제
  */
 window.KVW_ISSUES = window.KVW_ISSUES || {};
 window.KVW_ISSUES[6] = {
@@ -9,7 +9,7 @@ window.KVW_ISSUES[6] = {
     "1분기 벤처투자 24.1% 증가,",
     "Anduril $5B 펀딩"
   ],
-  "summary": "핵심 요약: 1분기 국내 벤처투자 · 프롭테크 투자 분석 · Gartner AI 지출 전망 · 해외 딜 4건",
+  "summary": "핵심 요약: 1분기 국내 벤처투자 · Gartner AI 지출 전망 · 데이터센터 전력 제약 · 해외 딜 4건",
   "points": [
     {
       "tag": "Policy",
@@ -41,22 +41,6 @@ window.KVW_ISSUES[6] = {
           "date": "2026.05.17"
         }
       ]
-    },
-    {
-      "type": "report",
-      "marker": "REPORT · 프롭테크",
-      "title": "프롭테크 투자: 현장 자율 실행 모델 비중 80.3%",
-      "facts": [
-        "자율 실행 모델이 프롭테크 투자 자본의 80.3% 차지"
-      ],
-      "sources": [
-        {
-          "name": "New Market Pitch",
-          "url": "https://newmarketpitch.com/blogs/news/proptech-funding-analysis",
-          "date": ""
-        }
-      ],
-      "pending": "[확인 불가: 원문 보고서·기사를 찾지 못함]"
     },
     {
       "type": "report",
@@ -152,9 +136,8 @@ window.KVW_ISSUES[6] = {
     }
   ],
   "insight": [
-    "현장 업무를 끝까지 수행하는 자율 실행형 에이전트로 자본 이동",
     "AI 수혜가 전력·데이터센터·방산·로보틱스 등 하드웨어·인프라로 집중"
   ],
   "no": 6,
-  "correction": "2026.10.27 원문 대조 후 정정: 1분기 통계에 원 단위 수치·펀드 결성 증가율(+30.7%) 보완하고 출처 교체, Ropes & Gray 항목 문장을 원문 기준으로 정정, Anduril(Series H)·Quantum Motion(Series C) 라운드명과 리드 투자자 보완. 프롭테크 80.3% 항목은 원문 확인 불가"
+  "correction": "2026.10.27 원문 대조 후 정정: 1분기 통계에 원 단위 수치·펀드 결성 증가율(+30.7%) 보완하고 출처 교체, Ropes & Gray 항목 문장을 원문 기준으로 정정, Anduril(Series H)·Quantum Motion(Series C) 라운드명과 리드 투자자 보완. 프롭테크 80.3% 항목은 원문 확인 불가. 원문 확인 불가 항목은 2026.10.27 사이트에서 삭제"
 };

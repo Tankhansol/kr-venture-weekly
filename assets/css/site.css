@@ -212,6 +212,24 @@ tr.current td { background: var(--accent-soft); font-weight: 700; }
 .deal-table .co { font-weight: 700; white-space: nowrap; }
 .deal-table .nt { display: block; font-size: 13px; font-weight: 400; color: var(--muted); font-family: var(--sans); white-space: normal; }
 
+/* Deals 모아보기 */
+.deal-tools { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 16px 20px; }
+.seg { display: inline-flex; border: 1px solid #C9C7C0; border-radius: 6px; overflow: hidden; background: var(--surface); }
+.seg-btn { min-height: 44px; min-width: 64px; padding: 0 16px; border: 0; border-right: 1px solid #C9C7C0; background: transparent; font-family: inherit; font-size: 15px; color: var(--muted); cursor: pointer; }
+.seg-btn:last-child { border-right: 0; }
+.seg-btn[aria-pressed="true"] { background: var(--ink); color: #FAFAF8; font-weight: 700; }
+.search.sort { flex: 0 0 auto; }
+.search select { min-height: 44px; padding: 0 12px; border: 1px solid #C9C7C0; border-radius: 6px; font-size: 15px; font-family: inherit; background: var(--surface); color: var(--ink); }
+.deals-all td:nth-child(2) { min-width: 0; }
+.deals-all td:nth-child(4) { min-width: 200px; }
+.deals-all td:nth-child(3) { min-width: 170px; }
+.deals-all td:nth-child(5) { min-width: 140px; }
+@media (max-width: 680px) { .grid-3.deal-figs { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; } .deal-figs .card { padding: 14px 12px; } .deal-figs .value { font-size: 22px; } .deal-figs .note { display: none; } }
+.deals-all td:last-child a { color: var(--ink); }
+.deals-card .all-deals { display: inline-flex; align-items: center; min-height: 44px; margin-top: 4px; color: var(--accent-on-dark); font-size: 14px; font-weight: 700; text-decoration: none; }
+.deals-card .all-deals:hover { color: #FFFFFF; }
+@media (max-width: 680px) { .deal-tools .search { flex: 1 1 100%; } }
+
 /* 푸터 */
 .site-footer { margin-top: 72px; background: var(--ink); color: #C9C7C0; }
 .site-footer .wrap { padding-top: 40px; padding-bottom: 40px; display: flex; flex-direction: column; gap: 6px; font-size: 14px; line-height: 1.7; }

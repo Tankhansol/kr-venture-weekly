@@ -39,7 +39,8 @@
         return '<li><span><span class="co">' + esc(d.name) + '</span><span class="rd">' + esc(d.round) + '</span></span>' +
           '<span class="amt">' + esc(C.fmtDealAmount(d)) + '</span></li>';
       }).join('') + '</ul>' +
-      '<p class="foot">단위: 국내 억 원, 해외 US$ (M=백만, B=10억)</p></aside>' +
+      '<p class="foot">단위: 국내 억 원, 해외 US$ (M=백만, B=10억)</p>' +
+      '<a class="all-deals" href="deals.html">전체 딜 모아보기 →</a></aside>' +
       '</div></div></section>';
   }
 
@@ -66,7 +67,6 @@
       '<tbody id="archive-body"></tbody></table></div>' +
       '<div class="archive-actions"><button type="button" class="btn btn-outline" id="archive-toggle" aria-controls="archive-body" aria-expanded="false"></button>' +
       '<span class="small muted" id="archive-status" role="status"></span></div>' +
-      '<p class="table-note">"대조 전" 표시는 이전 사이트에서 옮긴 뒤 아직 원문과 대조하지 않은 호입니다.</p>' +
       '</div></section>';
   }
 
