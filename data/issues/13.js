@@ -1,23 +1,23 @@
 /*
- * 제13호 (2026년 7월 2주차) — 이전 사이트에서 옮긴 내용, 원문 대조 전
+ * 제13호 (2026년 7월 2주차) — 이전 사이트에서 옮긴 뒤 2026.10.27 원문 대조 반영
  */
 window.KVW_ISSUES = window.KVW_ISSUES || {};
 window.KVW_ISSUES[13] = {
   "week": "2026년 7월 2주차",
   "shortWeek": "7월 2주",
   "title": [
-    "국내 IPO 감소 · 모태펀드 GP 투심위 참관,",
+    "상반기 국내 IPO 감소,",
     "Proxima Fusion €411M"
   ],
-  "summary": "핵심 요약: 1~5월 국내 상장 감소 · 모태펀드 투심위 참관 지침 · AI 오케스트레이션·NVentures 분석 · 해외 딜 3건",
+  "summary": "핵심 요약: 상반기 국내 IPO 감소 · AI 산업·CVC 동향 · 해외 딜 3건",
   "points": [
     {
       "tag": "Policy",
-      "text": "2026년 1~5월 국내 상장 15개사, 전년 대비 60% 감소"
+      "text": "2026년 상반기 국내 신규 상장 17곳, 전년 대비 55% 감소"
     },
     {
-      "tag": "Policy",
-      "text": "한국벤처투자, 모태펀드 자펀드 GP 투자심의위원회 참관 지침 수립"
+      "tag": "Report",
+      "text": "Prime Intellect $130M Series A($1B 밸류), Waabi 2026.01 $1B 조달"
     },
     {
       "tag": "Deal",
@@ -28,16 +28,16 @@ window.KVW_ISSUES[13] = {
     {
       "type": "policy",
       "marker": "POLICY · IPO",
-      "title": "2026년 1~5월 국내 상장 15개사, 전년 대비 60% 감소",
+      "title": "2026년 상반기 국내 신규 상장 17곳, 전년 대비 55% 감소",
       "facts": [
-        "2026년 1~5월 국내 상장 15개사, 전년 대비 60% 감소",
-        "펀드 만기(8년)와 IPO 평균 소요 기간(13년) 불일치 지적"
+        "2026년 상반기 신규 상장 17곳, 전년 대비 55% 감소",
+        "원문의 \"1~5월 15개사, 60% 감소\"와 \"펀드 만기 8년·IPO 소요 13년\" 수치는 원문 확인 불가"
       ],
       "sources": [
         {
-          "name": "블로터",
-          "url": "https://www.bloter.net/news/articleView.html?idxno=667319",
-          "date": ""
+          "name": "헤럴드경제",
+          "url": "https://www.heraldk.com/article/2026063018090282689",
+          "date": "2026.06.30"
         }
       ]
     },
@@ -55,7 +55,8 @@ window.KVW_ISSUES[13] = {
           "url": "https://www.bloter.net/news/articleView.html?idxno=667104",
           "date": ""
         }
-      ]
+      ],
+      "pending": "[확인 불가: 원문 보고서·기사를 찾지 못함]"
     },
     {
       "type": "report",
@@ -71,21 +72,28 @@ window.KVW_ISSUES[13] = {
           "url": "https://www.aitimes.com/news/articleView.html?idxno=212582",
           "date": ""
         }
-      ]
+      ],
+      "pending": "[확인 불가: 원문 보고서·기사를 찾지 못함]"
     },
     {
       "type": "report",
       "marker": "REPORT · CVC",
-      "title": "NVentures(엔비디아 CVC) 투자 전략 분석",
+      "title": "NVentures(엔비디아 CVC) 관련 대형 라운드",
       "facts": [
-        "GPU 우선 접근권을 기반으로 CoreWeave·Lambda Labs 등 네오클라우드 투자",
-        "Prime Intellect, Waabi 등 대형 라운드 참여"
+        "Prime Intellect, $130M Series A로 $1B 밸류 인정",
+        "Waabi는 2026.01 $1B 조달(원문의 \"$750M\"은 이전 협상 보도 수치)",
+        "NVentures의 각 라운드 주도 여부는 원문 확인 불가"
       ],
       "sources": [
         {
-          "name": "SiliconAngle",
-          "url": "https://siliconangle.com/2025/02/19/ai-infrastructure-startup-lambda-closes-480m-investment/",
+          "name": "NewsBytes",
+          "url": "https://www.newsbytesapp.com/news/business/prime-intellect-raises-130-million-series-a-valued-at-1b/tldr",
           "date": ""
+        },
+        {
+          "name": "Bloomberg",
+          "url": "https://www.bloomberg.com/news/articles/2026-01-28/self-driving-trucking-startup-waabi-raises-1-billion-expands-to-robotaxis",
+          "date": "2026.01.28"
         }
       ]
     }
@@ -96,41 +104,41 @@ window.KVW_ISSUES[13] = {
       "region": "해외",
       "sector": "핵융합 에너지",
       "round": "미기재",
-      "note": "밸류 $2.7B",
-      "investors": "구글·RWE 등",
-      "date": "",
+      "note": "밸류 €2.4B($2.7B)",
+      "investors": "XTX Ventures·East X Ventures(리드), Google·RWE(전략적 투자)",
+      "date": "2026.07.07",
       "amountText": "€411M",
       "source": {
-        "name": "PitchBook",
-        "url": "https://pitchbook.com/news/articles/germanys-proxima-fusion-secures-2-7b-valuation-as-google-backs-europes-reactor-race"
+        "name": "The Star (Reuters)",
+        "url": "https://www.thestar.com.my/tech/tech-news/2026/07/07/google-rwe-back-proxima-fusion-in-411-million-financing-round"
       }
     },
     {
       "name": "Norm",
       "region": "해외",
       "sector": "AI 법률",
-      "round": "미기재",
+      "round": "Series C",
       "note": "밸류 $1.2B",
       "investors": "Khosla Ventures(리드)",
       "date": "2026.07.07",
       "usdM": 120,
       "source": {
-        "name": "TechCrunch",
-        "url": "https://techcrunch.com/2026/07/07/ai-law-startup-norm-raises-120m-hits-unicorn-valuation/"
+        "name": "LawNext",
+        "url": "https://lawnext.com/2026/07/norm-ai-hits-unicorn-status-with-120m-series-c-at-1-2-billion-valuation.html"
       }
     },
     {
       "name": "Gradium",
       "region": "해외",
       "sector": "AI 음성 인프라",
-      "round": "Seed",
-      "note": "",
-      "investors": "NVIDIA 등",
-      "date": "2026.07.09",
+      "round": "Seed(누적)",
+      "note": "시드 익스텐션 포함 누적 $100M",
+      "investors": "NVIDIA 등(익스텐션 신규)",
+      "date": "2026.07.12",
       "usdM": 100,
       "source": {
-        "name": "TechCrunch",
-        "url": "https://techcrunch.com/2026/07/09/paris-based-ai-voice-startup-gradium-raises-100m-seed-backed-by-nvidia/"
+        "name": "Pulse 2.0",
+        "url": "https://pulse2.com/gradium-raises-funding-to-100-million-and-expands-to-silicon-valley/"
       }
     }
   ],
@@ -139,5 +147,5 @@ window.KVW_ISSUES[13] = {
     "독점 데이터나 워크플로 결합력이 없는 래퍼형 AI 툴은 투자 신중"
   ],
   "no": 13,
-  "status": "unverified"
+  "correction": "2026.10.27 원문 대조 후 정정: IPO 감소 수치를 확인된 상반기 기준(17곳, 55% 감소)으로 교체, Waabi 조달액($750M → 2026.01 $1B) 정정, Proxima Fusion 리드 투자자와 밸류 통화 정정, Gradium $100M은 시드 누적액으로 명시, Norm 라운드명(Series C) 보완. 모태펀드 투심위 참관·오케스트레이션 흡수·J-스페이스 항목은 원문 확인 불가"
 };
