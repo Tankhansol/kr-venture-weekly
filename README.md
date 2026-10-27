@@ -8,7 +8,7 @@
   - 최신호 칼럼(히어로·Weekly Deals)
   - Recent Issues, Archive(검색·펼치기)
   - 국내 벤처투자 시장 동향(월간)
-- **이슈 페이지(`issues/issue-NN.html`)**: 호별 Policy / Report / Deal 탭, INSIGHT, 이전·다음 호 이동
+- **이슈 페이지(`issues/issue-NN.html`)**: 한 페이지에 Policy → Report → Deal → INSIGHT 순서로 표시. 상단 고정 목차로 섹션 이동, 0건 섹션은 생략
 - **Deals(`deals.html`)**: 전 호의 딜을 한 표로 모아 지역 필터·검색(기업·섹터·투자자)·정렬(발표일, 금액). 같은 딜이 여러 호에 실리면 한 줄로 합치고 수록 호를 표시
 - **데이터 분리:** 화면은 데이터 파일(`data/`)만 읽어서 그립니다. 내용 수정은 데이터 파일에서만 합니다.
 

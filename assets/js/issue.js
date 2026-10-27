@@ -78,11 +78,11 @@
       '<p class="table-note">단위: 국내 억 원, 해외 US$ (M=백만, B=10억) · 발표일이 수록 주차 밖인 딜은 해당 월 주요 딜로 수록</p>';
   }
 
-  var tabs = [
+  var sections = [
     { id: 'policy', label: 'Policy', count: policy.length, html: function () { return policy.map(article).join(''); } },
     { id: 'report', label: 'Report', count: report.length, html: function () { return report.map(article).join(''); } },
     { id: 'deal', label: 'Deal', count: deals.length, html: dealTable }
-  ];
+  ].filter(function (x) { return x.count > 0; }); // 0건 섹션은 생략
 
   function nav() {
     var prev = K.issueHref(BASE, no - 1);
@@ -95,6 +95,8 @@
     return '<nav class="issue-nav" aria-label="호 이동">' + left + right + '</nav>';
   }
 
+  var insights = (I.insight || []).filter(function (x) { return String(x || '').trim(); });
+
   function render() {
     var articles = policy.length + report.length;
     root.innerHTML = K.header(BASE, A.latest === no ? 'weekly' : '') +
@@ -105,38 +107,21 @@
       (I.status === 'unverified' ? '<p class="correction"><b>원문 대조 전</b> · 이전 사이트에서 옮긴 내용입니다. 출처 URL이 없는 항목은 [확인 필요]로 표시했으며, 대조 후 정정 내용을 이 자리에 안내합니다.</p>' : '') +
       (I.correction ? '<p class="correction">' + esc(I.correction) + '</p>' : '') +
       figures() + '</section>' +
-      '<div class="tabs" role="tablist" aria-label="기사 분류">' + tabs.map(function (t, i) {
-        return '<button type="button" class="tab" role="tab" id="tab-' + t.id + '" aria-controls="panel" aria-selected="' + (i === 0) + '" tabindex="' + (i === 0 ? 0 : -1) + '" data-tab="' + t.id + '">' +
-          esc(t.label) + ' (' + t.count + ')</button>';
-      }).join('') + '</div>' +
-      '<div class="panel" id="panel" role="tabpanel" aria-labelledby="tab-policy"></div>' +
-      '<aside class="insight"><p class="marker">INSIGHT</p><ul>' + (I.insight || []).map(function (t) { return '<li>' + esc(t) + '</li>'; }).join('') + '</ul>' +
-      '<p class="disc">칼럼 의견은 운영자 개인 의견이며 소속 기관의 공식 입장이 아닙니다.</p></aside>' +
+      (sections.length ? '<nav class="toc" aria-label="이 호 목차">' + sections.map(function (x) {
+        return '<a href="#' + x.id + '">' + esc(x.label) + ' <span class="num">' + x.count + '</span></a>';
+      }).join('') + (insights.length ? '<a href="#insight">Insight</a>' : '') + '</nav>' : '') +
+      sections.map(function (x) {
+        return '<section class="issue-sec" id="' + x.id + '"><h2 class="sec-title">' + esc(x.label) +
+          ' <span class="num muted">' + x.count + '</span></h2><div class="panel">' + x.html() + '</div></section>';
+      }).join('') +
+      (insights.length ? '<aside class="insight" id="insight"><p class="marker">INSIGHT</p><ul>' + insights.map(function (t) { return '<li>' + esc(t) + '</li>'; }).join('') + '</ul>' +
+      '<p class="disc">칼럼 의견은 운영자 개인 의견이며 소속 기관의 공식 입장이 아닙니다.</p></aside>' : '') +
       nav() + '</main>' + K.footer();
 
-    var panel = document.getElementById('panel');
-    var buttons = Array.prototype.slice.call(root.querySelectorAll('.tab'));
-    function select(id, focus) {
-      buttons.forEach(function (b) {
-        var on = b.getAttribute('data-tab') === id;
-        b.setAttribute('aria-selected', on ? 'true' : 'false');
-        b.tabIndex = on ? 0 : -1;
-        if (on) { panel.setAttribute('aria-labelledby', b.id); if (focus) b.focus(); }
-      });
-      var t = tabs.filter(function (x) { return x.id === id; })[0];
-      var html = t.html();
-      panel.innerHTML = html || '<p class="muted">이번 호에는 해당 항목이 없습니다.</p>';
-    }
-    buttons.forEach(function (b, i) {
-      b.addEventListener('click', function () { select(b.getAttribute('data-tab')); });
-      b.addEventListener('keydown', function (e) {
-        if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
-        var j = (i + (e.key === 'ArrowRight' ? 1 : buttons.length - 1)) % buttons.length;
-        select(buttons[j].getAttribute('data-tab'), true);
-      });
-    });
-    var start = (location.hash || '').replace('#', '');
-    select(tabs.some(function (t) { return t.id === start; }) ? start : 'policy');
+    // 내용이 스크립트로 그려지므로, 주소에 #deal 등이 있으면 그린 뒤 해당 위치로 이동
+    var target = (location.hash || '').replace('#', '');
+    var el = target && document.getElementById(target);
+    if (el) el.scrollIntoView();
   }
 
   render();
