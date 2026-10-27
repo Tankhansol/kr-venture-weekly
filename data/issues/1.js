@@ -1,5 +1,5 @@
 /*
- * 제1호 (2026년 4월 2주차) — 이전 사이트에서 옮긴 내용, 원문 대조 전
+ * 제1호 (2026년 4월 2주차) — 이전 사이트에서 옮긴 뒤 2026.10.27 원문 대조 반영
  */
 window.KVW_ISSUES = window.KVW_ISSUES || {};
 window.KVW_ISSUES[1] = {
@@ -13,68 +13,74 @@ window.KVW_ISSUES[1] = {
   "points": [
     {
       "tag": "Policy",
-      "text": "중기부 벤처투자 개편안: 의무투자 기간 3년 → 5년, CVC 9개월 처분 유예"
+      "text": "벤처투자 제도 개편: 투자의무 이행기간 3년 → 5년, CVC 지분 처분 9개월 유예"
     },
     {
       "tag": "Policy",
-      "text": "AX Sprint 1,400억 원 우대 트랙 신설, 기업당 대출 한도 최대 100억 원"
+      "text": "정책자금 AX 스프린트 우대 트랙 1,400억 원, 기업당 한도 최대 100억 원"
     },
     {
       "tag": "Report",
-      "text": "Stanford HAI 2026 AI 인덱스 발간(4.13)"
+      "text": "Stanford HAI 2026 AI 인덱스: 생성형 AI 채택률 53%, 미·중 격차 2.7%"
     }
   ],
   "articles": [
     {
       "type": "policy",
       "marker": "POLICY · 벤처투자법",
-      "title": "중기부 2026년 벤처투자 개편안 발표",
+      "title": "중기부 벤처투자 제도 개편",
       "facts": [
-        "VC 의무투자 충족 기간 3년에서 5년으로 연장",
-        "대기업 계열 편입 시 5년 내 지분 처분 의무 폐지, CVC 9개월 처분 유예 신설",
-        "비상장 지분·조각투자 거래 플랫폼 투자 허용"
+        "VC 투자의무 이행기간 3년 → 5년 연장(2026.01 중기부 발표)",
+        "대기업 집단 편입 CVC 투자기업 지분 처분 9개월 유예(2026.06.23 시행령 국무회의 통과, 7.1 시행)",
+        "원문의 \"5년 내 지분 처분 의무 폐지\"는 9개월 유예와 모순되어 삭제"
       ],
       "sources": [
         {
-          "name": "KoreaTechDesk",
-          "url": null,
-          "date": ""
+          "name": "헤럴드경제",
+          "url": "https://www.heraldk.com/article/2026062220523978997",
+          "date": "2026.06.22"
+        },
+        {
+          "name": "머니투데이",
+          "url": "https://www.mt.co.kr/future/2026/01/06/2026010610512223219",
+          "date": "2026.01.06"
         }
       ],
-      "pending": "[확인 필요: 원문 기사 URL·기사일]"
+      "pending": "[확인 필요: 4월 개편안 발표 원문, 비상장 지분·조각투자 플랫폼 투자 허용 여부]"
     },
     {
       "type": "policy",
       "marker": "POLICY · 정책 자금",
-      "title": "AX Sprint 1,400억 원 우대 트랙 신설",
+      "title": "2026년 정책자금 AX 스프린트 우대 트랙 1,400억 원",
       "facts": [
-        "AI 기술 보유·AX 추진 기업 대상 1,400억 원 우대 트랙",
-        "기업당 대출 한도 최대 100억 원, 금리 우대·신속 심사"
+        "AI·반도체 등 혁신성장 분야 AX 추진 중소기업 대상 1,400억 원 우대 트랙",
+        "기업당 대출 잔액 한도 60억 원 → 100억 원, 금리 0.1%p 우대·신속 심사",
+        "2025.12.22 2026년 정책자금 운용계획으로 발표"
       ],
       "sources": [
         {
-          "name": "Entrepreneur Loop",
-          "url": null,
-          "date": ""
+          "name": "디지털타임스",
+          "url": "https://www.dt.co.kr/article/12036629",
+          "date": "2025.12.22"
         }
-      ],
-      "pending": "[확인 필요: 원문 기사 URL·기사일]"
+      ]
     },
     {
       "type": "report",
       "marker": "REPORT · AI 인덱스",
-      "title": "Stanford HAI 2026 AI 인덱스 발간",
+      "title": "Stanford HAI 2026 AI 인덱스 발간(2026.04)",
       "facts": [
-        "2026.04.13 발간"
+        "생성형 AI, 3년 만에 인구 기준 채택률 53%",
+        "2026.03 기준 미·중 최상위 모델 성능 격차 2.7%",
+        "원문의 발간일 4.13은 원문 확인 불가(4.14 기사 기준 \"이번 주 발간\")"
       ],
       "sources": [
         {
-          "name": "Stanford HAI",
-          "url": null,
-          "date": ""
+          "name": "Stark Insider",
+          "url": "https://www.starkinsider.com/2026/04/stanford-2026-ai-index-report.html",
+          "date": "2026.04.14"
         }
-      ],
-      "pending": "[확인 필요: 원문 기사 URL·기사일]"
+      ]
     }
   ],
   "deals": [
@@ -83,13 +89,13 @@ window.KVW_ISSUES[1] = {
       "region": "해외",
       "sector": "범용 로보틱스 AI",
       "round": "전략적 투자",
-      "note": "",
-      "investors": "Accenture Ventures(리드)",
+      "note": "투자 조건 비공개",
+      "investors": "Accenture(Accenture Ventures)",
       "date": "2026.04.15",
       "amountText": "비공개",
       "source": {
         "name": "Accenture Newsroom",
-        "url": null
+        "url": "https://newsroom.accenture.com/news/2026/accenture-invests-in-general-robotics-to-advance-physical-ai-powered-robotics-in-manufacturing-and-logistics"
       }
     }
   ],
@@ -98,5 +104,5 @@ window.KVW_ISSUES[1] = {
     "AI 초점이 소프트웨어에서 로봇·산업 인프라 등 물리적 AI로 이동"
   ],
   "no": 1,
-  "status": "unverified"
+  "correction": "2026.10.27 원문 대조 후 정정: \"지분 처분 의무 폐지\"와 \"9개월 유예\"가 함께 적힌 모순을 9개월 유예로 정리, AX 스프린트는 2025.12 발표된 2026년 정책자금 운용계획임을 명시하고 한도는 대출 잔액 기준으로 정정, Stanford HAI 핵심 수치와 출처 보완. 4월 개편안 원문과 비상장 플랫폼 투자 허용은 원문 확인 불가"
 };

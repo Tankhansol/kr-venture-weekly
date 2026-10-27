@@ -1,5 +1,5 @@
 /*
- * 제7호 (2026년 5월 4주차) — 이전 사이트에서 옮긴 내용, 원문 대조 전
+ * 제7호 (2026년 5월 4주차) — 이전 사이트에서 옮긴 뒤 2026.10.27 원문 대조 반영
  */
 window.KVW_ISSUES = window.KVW_ISSUES || {};
 window.KVW_ISSUES[7] = {
@@ -9,15 +9,15 @@ window.KVW_ISSUES[7] = {
     "엔터프라이즈 AI ROI 점검,",
     "Anthropic $65B Series H"
   ],
-  "summary": "핵심 요약: AI 부채 경고 · 엔터프라이즈 AI ROI 분석 · AI 컴퓨팅 자산화 · 해외 딜 3건",
+  "summary": "핵심 요약: AI ROI 점검 · Anthropic–xAI 컴퓨팅 계약 · 해외 딜 3건",
   "points": [
     {
       "tag": "Report",
-      "text": "IDC·MIT: 기업 AI 프로젝트의 88~95%가 측정 가능한 ROI 미달"
+      "text": "AI PoC 88% 실서비스 미진입(IDC), 95% 손익 성과 미달(MIT), 회수 기간 2~4년(Deloitte)"
     },
     {
       "tag": "Report",
-      "text": "xAI, Anthropic에 월 $1.25B 규모 컴퓨팅 용량 공급"
+      "text": "Anthropic, xAI 컴퓨팅 용량에 월 $1.25B 지급 계약(2029.05까지)"
     },
     {
       "tag": "Deal",
@@ -44,40 +44,42 @@ window.KVW_ISSUES[7] = {
           "url": "https://www.aitimes.com/news/articleView.html?idxno=210924",
           "date": ""
         }
-      ]
+      ],
+      "pending": "[확인 불가: 원문 보고서·기사를 찾지 못함]"
     },
     {
       "type": "report",
       "marker": "REPORT · AI ROI",
-      "title": "IDC·MIT: 기업 AI 프로젝트의 88~95%가 측정 가능한 ROI 미달",
+      "title": "AI 투자 회수 지연: PoC 88% 실서비스 미진입(IDC), 95% 손익 성과 미달(MIT)",
       "facts": [
-        "AI 투자 회수 기간 평균 2~4년(일반 IT 7~12개월)",
-        "기업 AI 프로젝트의 88~95%가 실서비스 미진입 또는 ROI 미달"
+        "AI 개념 검증(PoC) 프로젝트의 88% 실서비스 미진입(IDC)",
+        "AI 프로젝트의 95% 측정 가능한 손익 성과 미달(MIT, 2025 보고서)",
+        "AI 투자 회수 기간 2~4년, 일반 기술 투자 기대치 7~12개월(Deloitte)"
       ],
       "sources": [
         {
-          "name": "CIO",
-          "url": "https://www.cio.com/article/4177968/",
-          "date": ""
+          "name": "ITWorld Korea",
+          "url": "https://www.itworld.co.kr/article/4177968/",
+          "date": "2026.05.28"
         }
       ]
     },
     {
       "type": "report",
       "marker": "REPORT · AI 인프라",
-      "title": "AI 컴퓨팅의 독립 자산화",
+      "title": "Anthropic, xAI 컴퓨팅 용량에 월 $1.25B 지급 계약",
       "facts": [
-        "xAI, Anthropic에 월 $1.25B 규모 컴퓨팅 용량 공급",
-        "마이크론·삼성전자·SK하이닉스 인프라 파트너 참여"
+        "Anthropic이 xAI(Colossus)에 월 $1.25B(연 $15B) 지급, 계약 기간 2029.05까지, 총 $40B 이상 가능",
+        "SpaceX S-1 공시(2026.05 중순)로 공개",
+        "원문의 \"마이크론·삼성전자·SK하이닉스 인프라 파트너 참여\"는 원문 확인 불가"
       ],
       "sources": [
         {
-          "name": "CIO",
-          "url": null,
-          "date": ""
+          "name": "Enterprise DNA (TechCrunch 인용)",
+          "url": "https://enterprisedna.co/resources/news/anthropic-xai-colossus-1-25-billion-compute-economics-2026/",
+          "date": "2026.05.25"
         }
-      ],
-      "pending": "[확인 필요: 원문 기사 URL·기사일]"
+      ]
     },
     {
       "type": "report",
@@ -92,7 +94,8 @@ window.KVW_ISSUES[7] = {
           "url": "https://www.itworld.co.kr/article/4173473/",
           "date": ""
         }
-      ]
+      ],
+      "pending": "[확인 불가: 원문 보고서·기사를 찾지 못함]"
     }
   ],
   "deals": [
@@ -101,13 +104,13 @@ window.KVW_ISSUES[7] = {
       "region": "해외",
       "sector": "파운데이션 AI",
       "round": "Series H",
-      "note": "밸류 $965B",
-      "investors": "Altimeter·Dragoneer·Greenoaks·Sequoia 등",
-      "date": "",
+      "note": "포스트머니 밸류 $965B",
+      "investors": "Altimeter Capital·Dragoneer·Greenoaks·Sequoia Capital(리드)",
+      "date": "2026.05.29",
       "usdM": 65000,
       "source": {
-        "name": "Crunchbase News",
-        "url": "https://news.crunchbase.com/ai/anthropic-nears-1t-valuation-65b-seriesh/"
+        "name": "Orrick",
+        "url": "https://www.orrick.com/en/News/2026/05/Anthropic-Raises-65B-Series-H-at-965B-Post-Money-Valuation"
       }
     },
     {
@@ -144,5 +147,5 @@ window.KVW_ISSUES[7] = {
     "투자 실사 시 프롬프트 버전 관리와 추론 과정 설명 가능성 점검 필요"
   ],
   "no": 7,
-  "status": "unverified"
+  "correction": "2026.10.27 원문 대조 후 정정: ROI 수치의 출처를 항목별로 정정(88%는 IDC PoC 기준, 95%는 MIT, 회수 기간은 Deloitte), xAI–Anthropic 계약은 Anthropic이 지급하는 구조와 기간(2029.05까지) 명시, Anthropic 딜 출처 보완. AI 부채·PQC·메모리 3사 참여 항목은 원문 확인 불가"
 };

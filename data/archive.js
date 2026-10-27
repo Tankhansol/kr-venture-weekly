@@ -27,12 +27,12 @@ window.KVW_ARCHIVE = {
     { no: 10, week: '6월 4주', local: true, title: '넥스트라이즈 2026 · Anthropic 모델 차단과 AI 주권', deals: 'Supabase $500M · Odyssey $310M · PhysicsX $300M', keywords: 'Baseten Supabase Odyssey PhysicsX Sarvam Flutterwave SpaceX Cursor 넥스트라이즈' },
     { no: 9, week: '6월 3주', local: true, title: '벤처투자법 시행령 국무회의 통과 · 수도권 임대주택 펀드', deals: 'Anthropic $65B · Supabase $500M · Mind Robotics $400M', keywords: 'Anthropic Supabase Mind Robotics PhysicsX Stord Focused Energy Coralogix Standard Bots Corgi Xpanner' },
     { no: 8, week: '6월 2주', local: true, title: '삼성중공업 해상 데이터센터 · 국민성장펀드 퓨리오사AI 8,000억 원', deals: 'Anthropic $65B · Supabase $500M · Focused Energy $240M', keywords: 'Anthropic Supabase Focused Energy Coralogix 퓨리오사AI 삼성중공업' },
-    { no: 7, week: '5월 4주', local: true, verified: false, title: '엔터프라이즈 AI ROI 점검', deals: 'Stord $250M · Corgi $106M', keywords: 'Anthropic Stord Corgi' },
-    { no: 6, week: '5월 3주', local: true, verified: false, title: '1분기 벤처투자 24.1% 반등', deals: 'Anduril · Blitzy $200M · Quantum Motion $160M', keywords: 'Anduril Blitzy Quantum Motion Xpanner' },
-    { no: 5, week: '5월 2주', local: true, verified: false, title: '방산·데이터센터 인프라 대형 딜', deals: 'Anduril · VoltaGrid $775M', keywords: 'Anduril VoltaGrid Recursive Superintelligence 그래폰' },
-    { no: 4, week: '5월 1주', local: true, verified: false, title: 'CVC M&A 규제 폐지 · 업스테이지 정부 투자', deals: 'Ineffable $1.1B · Kalshi $1B · True Anomaly $650M', keywords: 'Ineffable Intelligence Kalshi True Anomaly Blitzy Robot Era Quantum Motion' },
-    { no: 3, week: '4월 4주', local: true, verified: false, title: 'AI 에이전트 거버넌스 · 휴머노이드 양산', deals: 'Legora · Parallel Web Systems · Firestorm Labs $82M', keywords: 'Parallel Web Systems Firestorm Labs Legora' },
-    { no: 2, week: '4월 3주', local: true, verified: false, title: 'CVC 지분 매각 의무 폐지 · 한국 스타트업 미국 플립', deals: 'Reliable Robotics $160M · Ray Therapeutics $125M', keywords: 'Anthropic Reliable Robotics Ray Therapeutics Omni' },
-    { no: 1, week: '4월 2주', local: true, verified: false, title: '중기부 벤처투자 개편안 · Stanford HAI AI 인덱스', deals: '—', keywords: 'General Robotics' }
+    { no: 7, week: '5월 4주', local: true, title: 'AI ROI 점검 · Anthropic–xAI 컴퓨팅 계약', deals: 'Anthropic $65B · Stord $250M · Corgi $106M', keywords: 'Anthropic Stord Corgi xAI' },
+    { no: 6, week: '5월 3주', local: true, title: '1분기 벤처투자 3.3조 원(+24.1%) · Gartner AI 지출 전망', deals: 'Anduril $5B · Blitzy $200M · Quantum Motion $160M', keywords: 'Anduril Blitzy Quantum Motion Xpanner' },
+    { no: 5, week: '5월 2주', local: true, title: '서울 소상공인 AI 활용률 9.7% · Anthropic–SpaceX 데이터센터', deals: 'Anduril $5B · VoltaGrid $775M · Recursive $650M', keywords: 'Anduril VoltaGrid Recursive Superintelligence 그래폰 SpaceX' },
+    { no: 4, week: '5월 1주', local: true, title: 'CVC 지분 처분 9개월 유예 · 업스테이지 5,600억 원', deals: 'Ineffable $1.1B · Kalshi $1B · True Anomaly $650M', keywords: 'Ineffable Intelligence Kalshi True Anomaly Blitzy Robot Era Quantum Motion' },
+    { no: 3, week: '4월 4주', local: true, title: 'AI 에이전트 DB 삭제 사고 · 휴머노이드 양산 계획', deals: 'Parallel Web Systems $100M · Firestorm Labs $82M · Legora $50M', keywords: 'Parallel Web Systems Firestorm Labs Legora PocketOS 샤오펑 셰플러' },
+    { no: 2, week: '4월 3주', local: true, title: 'CVC 지분 처분 9개월 유예 · 한국 스타트업 미국 플립', deals: 'Anthropic $5B · Reliable Robotics $160M · Ray Therapeutics $125M', keywords: 'Anthropic Reliable Robotics Ray Therapeutics Omni' },
+    { no: 1, week: '4월 2주', local: true, title: '벤처투자 제도 개편 · Stanford HAI AI 인덱스', deals: 'General Robotics(비공개)', keywords: 'General Robotics' }
   ]
 };
