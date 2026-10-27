@@ -1,5 +1,5 @@
 /*
- * 제8호 (2026년 6월 2주차) — 이전 사이트에서 옮긴 내용, 원문 대조 전
+ * 제8호 (2026년 6월 2주차) — 이전 사이트에서 옮긴 뒤 2026.10.27 원문 대조 반영
  */
 window.KVW_ISSUES = window.KVW_ISSUES || {};
 window.KVW_ISSUES[8] = {
@@ -9,11 +9,11 @@ window.KVW_ISSUES[8] = {
     "삼성중공업 해상 데이터센터,",
     "Supabase $500M · Anthropic $65B"
   ],
-  "summary": "핵심 요약: 해상 데이터센터 개발 · 퓨리오사AI 투자 논란 · AI 가치 지수(AIVI)·AI 부채 리포트 · 해외 딜 4건",
+  "summary": "핵심 요약: 삼성중공업 해상 데이터센터 · 국민성장펀드 퓨리오사AI 투자 · 해외 딜 4건",
   "points": [
     {
       "tag": "Policy",
-      "text": "삼성중공업, LNG 냉열 활용 부유식 해상 데이터센터 개발"
+      "text": "삼성중공업, 부유식 해상 데이터센터 3자 협약·Supermicro 공동개발"
     },
     {
       "tag": "Report",
@@ -28,34 +28,41 @@ window.KVW_ISSUES[8] = {
     {
       "type": "policy",
       "marker": "POLICY · 데이터센터",
-      "title": "삼성중공업, 부유식 해상 데이터센터 개발",
+      "title": "삼성중공업, 부유식 해상 데이터센터(FDC) 사업 추진",
       "facts": [
-        "지상 데이터센터의 전력·냉각수 문제 대응을 위한 부유식 해상 데이터센터 개발",
-        "LNG 냉열 활용 냉각"
+        "50MW급 FDC 설계로 ABS·Lloyd's Register 기본승인(AiP) 획득, 해수 냉각 방식",
+        "2026.06.03 그리스 Capital·Lloyd's Register와 3자 사업 협약, Supermicro와 공동개발 협약",
+        "원문의 \"LNG 냉열 활용 냉각\"은 원문 확인 불가(확인한 기사는 해수 냉각으로 기재)"
       ],
       "sources": [
         {
-          "name": "조선비즈",
-          "url": "https://biz.chosun.com/industry/company/2026/06/07/LFEVAH3BPFH2NCQMDO655RGO7Y/",
-          "date": ""
+          "name": "다음(5.15 보도)",
+          "url": "https://v.daum.net/v/20260515143105865",
+          "date": "2026.05.15"
+        },
+        {
+          "name": "세계일보",
+          "url": "https://www.segye.com/newsView/20260603510305",
+          "date": "2026.06.04"
         }
       ]
     },
     {
       "type": "policy",
       "marker": "POLICY · 정책 금융",
-      "title": "퓨리오사AI 8,000억 원 투자 논란",
+      "title": "국민성장펀드, 퓨리오사AI에 약 8,000억 원 직접투자",
       "facts": [
-        "수요 검증 전 정책 금융과 결합된 8,000억 원 규모 투자에 대한 비판 제기"
+        "첨단전략산업기금 3,700억 원·산업은행 300억 원·민간(네이버·한국투자파트너스 등) 4,000억 원",
+        "투자 전 기업가치 약 3조 원, 2026.05.28 기금운용심의회 승인",
+        "원문의 \"수요 검증 전 투자 비판\"은 원문 확인 불가"
       ],
       "sources": [
         {
-          "name": "사이언스모니터",
-          "url": null,
-          "date": ""
+          "name": "다음",
+          "url": "https://v.daum.net/v/20260528193851190",
+          "date": "2026.05.28"
         }
-      ],
-      "pending": "[확인 필요: 원문 기사 URL·기사일]"
+      ]
     },
     {
       "type": "report",
@@ -76,7 +83,8 @@ window.KVW_ISSUES[8] = {
           "url": "https://www.aitimes.com/news/articleView.html?idxno=210926",
           "date": ""
         }
-      ]
+      ],
+      "pending": "[확인 불가: 원문 보고서·기사를 찾지 못함]"
     }
   ],
   "deals": [
@@ -85,13 +93,13 @@ window.KVW_ISSUES[8] = {
       "region": "해외",
       "sector": "파운데이션 AI",
       "round": "Series H",
-      "note": "밸류 $965B",
-      "investors": "원문 미기재",
-      "date": "",
+      "note": "포스트머니 밸류 $965B",
+      "investors": "Altimeter Capital·Dragoneer·Greenoaks·Sequoia Capital(리드)",
+      "date": "2026.05.29",
       "usdM": 65000,
       "source": {
-        "name": "Crunchbase News",
-        "url": "https://news.crunchbase.com/ai/anthropic-nears-1t-valuation-65b-seriesh/"
+        "name": "Orrick",
+        "url": "https://www.orrick.com/en/News/2026/05/Anthropic-Raises-65B-Series-H-at-965B-Post-Money-Valuation"
       }
     },
     {
@@ -104,8 +112,8 @@ window.KVW_ISSUES[8] = {
       "date": "2026.06.05",
       "usdM": 500,
       "source": {
-        "name": "TechCrunch",
-        "url": "https://techcrunch.com/2026/06/05/supabase-doubles-valuation-to-10b-in-8-months/"
+        "name": "Orrick",
+        "url": "https://www.orrick.com/en/News/2026/06/Supabase-Raises-500-Million-at-10-5-Billion-Valuation-to-Accelerate-Lead-in-Agentic-Infrastructure"
       }
     },
     {
@@ -142,5 +150,5 @@ window.KVW_ISSUES[8] = {
     "전력·냉각·모니터링 등 AI 인프라 관제 영역으로 자본 이동"
   ],
   "no": 8,
-  "status": "unverified"
+  "correction": "2026.10.27 원문 대조 후 정정: 삼성중공업 해상 데이터센터의 냉각 방식(LNG 냉열 → 해수 냉각) 정정과 협약 내용 보완, 퓨리오사AI 8,000억 원 재원 구성 명시, Anthropic·Supabase 리드 투자자와 출처 보완. 퓨리오사AI 투자 비판·AIVI·AI 부채 항목은 원문 확인 불가"
 };
