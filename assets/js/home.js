@@ -50,7 +50,7 @@
       '<div class="grid grid-3" style="margin-top:16px">' + rows.map(function (r) {
         var h = K.issueHref('', r.no);
         return '<a class="card issue-card" href="' + esc(h.href) + '"' + (h.legacy ? ' target="_blank" rel="noopener"' : '') + '>' +
-          '<span class="meta">No. ' + esc(r.no) + ' · ' + esc(r.week) + (h.legacy ? '<span class="legacy">이전 사이트 ↗</span>' : '') + '</span>' +
+          '<span class="meta">No. ' + esc(r.no) + ' · ' + esc(r.week) + (h.legacy ? '<span class="legacy">이전 사이트 ↗</span>' : '') + (r.verified === false ? '<span class="legacy">대조 전</span>' : '') + '</span>' +
           '<span class="ttl">' + esc(r.title) + '</span>' +
           '<span class="dl">' + esc(r.deals) + '</span></a>';
       }).join('') + '</div></div></section>';
@@ -66,7 +66,7 @@
       '<tbody id="archive-body"></tbody></table></div>' +
       '<div class="archive-actions"><button type="button" class="btn btn-outline" id="archive-toggle" aria-controls="archive-body" aria-expanded="false"></button>' +
       '<span class="small muted" id="archive-status" role="status"></span></div>' +
-      '<p class="table-note">' + esc('No. ' + K.pad2(oldest) + '~' + K.pad2(latestNo - 1)) + ' 중 "이전 사이트" 표시는 새 디자인으로 옮기기 전인 호이며, 이전 사이트 페이지가 새 창으로 열립니다.</p>' +
+      '<p class="table-note">"대조 전" 표시는 이전 사이트에서 옮긴 뒤 아직 원문과 대조하지 않은 호입니다.</p>' +
       '</div></section>';
   }
 
@@ -84,7 +84,7 @@
       var h = K.issueHref('', r.no);
       return '<tr><td class="num"><a href="' + esc(h.href) + '"' + (h.legacy ? ' target="_blank" rel="noopener"' : '') + '>' + esc(K.pad2(r.no)) + '</a></td>' +
         '<td class="muted" style="white-space:nowrap">' + esc(r.week) + '</td>' +
-        '<td style="font-weight:500">' + esc(r.title) + (h.legacy ? '<span class="legacy">이전 사이트 ↗</span>' : '') + '</td>' +
+        '<td style="font-weight:500">' + esc(r.title) + (h.legacy ? '<span class="legacy">이전 사이트 ↗</span>' : '') + (r.verified === false ? '<span class="legacy">대조 전</span>' : '') + '</td>' +
         '<td class="muted">' + esc(r.deals) + '</td></tr>';
     }
 

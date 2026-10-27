@@ -102,6 +102,7 @@
     return '$' + s + 'M';
   }
   function fmtDealAmount(d) {
+    if (d && typeof d.amountText === 'string' && d.amountText) return d.amountText; // 유로·호주달러·누적액 등 예외 표기
     if (!d) return '비공개';
     if (d.region === '해외') return fmtUSD(d.usdM);
     return fmtKRW(d.krw);

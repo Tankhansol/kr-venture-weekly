@@ -36,7 +36,8 @@
       if (gl) list.push({ label: '해외 최대 딜', value: C.fmtDealAmount(gl.d), note: gl.d.name + ' · ' + gl.d.round });
     }
     list.push({ label: 'Weekly Deals', value: cnt.total + '건', note: cnt.label });
-    return '<div class="grid grid-3" style="margin-top:28px">' + list.map(function (f) {
+    var cols = Math.min(Math.max(list.length, 2), 4);
+    return '<div class="grid grid-' + cols + '" style="margin-top:28px">' + list.map(function (f) {
       return '<div class="card figure"><p class="label">' + esc(f.label) + '</p><p class="value">' + esc(f.value) + '</p><p class="note">' + esc(f.note) + '</p></div>';
     }).join('') + '</div>';
   }
@@ -64,12 +65,14 @@
       '<th>기업</th><th>섹터</th><th>라운드</th><th class="r">금액</th><th>주요 투자자</th><th>발표일 · 출처</th>' +
       '</tr></thead><tbody>' + deals.map(function (d) {
         var u = d.source && K.safeUrl(d.source.url);
-        var src = u ? '<a href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(d.source.name) + '</a>' : '<span class="pending">[확인 필요]</span>';
+        var src = u ? '<a href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(d.source.name) + '</a>' :
+          (d.source && d.source.name ? esc(d.source.name) + ' <span class="pending">[URL 확인 필요]</span>' : '<span class="pending">[확인 필요]</span>');
+        var dateTxt = d.date ? esc(d.date) : '—';
         return '<tr><td class="co">' + esc(d.name) + '<span class="nt">' + esc(d.region) + '</span></td>' +
           '<td>' + esc(d.sector) + '</td><td style="white-space:nowrap">' + esc(d.round) + '</td>' +
           '<td class="num r" style="white-space:nowrap">' + esc(C.fmtDealAmount(d)) + (d.note ? '<span class="nt">' + esc(d.note) + '</span>' : '') + '</td>' +
           '<td>' + esc(d.investors) + '</td>' +
-          '<td style="white-space:nowrap"><span class="num">' + esc(d.date) + '</span><span class="nt">' + src + '</span></td></tr>';
+          '<td style="white-space:nowrap"><span class="num">' + dateTxt + '</span><span class="nt">' + src + '</span></td></tr>';
       }).join('') + '</tbody></table></div>' +
       '<p class="table-note">단위: 국내 억 원, 해외 US$ (M=백만, B=10억) · 발표일이 수록 주차 밖인 딜은 해당 월 주요 딜로 수록</p>';
   }
@@ -98,6 +101,7 @@
       '<section class="issue-head"><p class="issue-meta">No. ' + esc(I.no) + ' · ' + esc(I.week) + ' · 기사 ' + articles + '건 · 딜 ' + deals.length + '건</p>' +
       '<h1 class="issue-title">' + (I.title || []).map(esc).join('<br>') + '</h1>' +
       '<p class="issue-summary">' + esc(I.summary) + '</p>' +
+      (I.status === 'unverified' ? '<p class="correction"><b>원문 대조 전</b> · 이전 사이트에서 옮긴 내용입니다. 출처 URL이 없는 항목은 [확인 필요]로 표시했으며, 대조 후 정정 내용을 이 자리에 안내합니다.</p>' : '') +
       (I.correction ? '<p class="correction">' + esc(I.correction) + '</p>' : '') +
       figures() + '</section>' +
       '<div class="tabs" role="tablist" aria-label="기사 분류">' + tabs.map(function (t, i) {
