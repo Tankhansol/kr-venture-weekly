@@ -76,8 +76,8 @@
     var btn = document.getElementById('archive-toggle');
     var status = document.getElementById('archive-status');
     var expanded = false;
-    // Recent Issues와 겹치지 않는 목록: 최신호와 직전 3개 호 제외
-    var base = issues.filter(function (r) { return r.no < latestNo - 3; });
+    // 전체 호 목록(최신호 포함). 기본 5개, 펼치면 전체
+    var base = issues.slice();
     var oldest = issues.length ? issues[issues.length - 1].no : 1;
 
     function rowHtml(r) {
