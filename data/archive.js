@@ -5,9 +5,11 @@
  * keywords: 검색용 회사·기관명 (선택). 제목·대표 딜은 목록용 요약입니다.
  */
 window.KVW_ARCHIVE = {
-  latest: 24,
+  latest: 25,
   legacyBase: 'https://mjbfkqkk.gensparkspace.com/issues/issue-',
   issues: [
+    { no: 25, week: '10월 5주', local: true, title: '퓨리오사AI 8,200억 원 Series D · 국민성장펀드 누적 22.3조 원', deals: '퓨리오사AI 8,200억 원 · Modal $750M · Hex $100M',
+      keywords: '퓨리오사AI 프리뉴 나노포지에이아이 Modal Hex Machenta FORT Robotics 국민성장펀드 대전 D-Growth Fund ICI 스타트업레시피' },
     { no: 24, week: '10월 4주', local: true, title: '벤처투자법 개정안 국무회의 통과 · Tenstorrent $1.5B Series E', deals: 'Tenstorrent $1.5B · 더휴식 650억 원 · Eka Robotics $150M',
       keywords: '네이션에이 휴로틱스 더휴식 Tenstorrent Eka Robotics Dream Labs Kopin 한국벤처투자 모태펀드 벤처투자법' },
     { no: 23, week: '10월 3주', local: true, title: '군인공제회 3,000억 원 출자 확정 · Q3 글로벌 VC 투자 $170.9B', deals: 'Veir $110M · Mecka $60M · 대동로보틱스 50억 원',
