@@ -1,5 +1,5 @@
 /*
- * 제25호 (2026년 10월 5주차) — Gemini 초안 + Claude 국내 보완, 2026.11.02 원문 대조 반영
+ * 제25호 (2026년 10월 5주차) — Gemini 초안 + Claude 국내 보완 + ChatGPT 해외 딜 보완, 2026.11.02 원문 대조 반영
  * 금액: 국내 krw(억 원), 해외 usdM(백만 달러). 비공개는 null
  */
 window.KVW_ISSUES = window.KVW_ISSUES || {};
@@ -8,8 +8,8 @@ window.KVW_ISSUES[25] = {
   week: '2026년 10월 5주차',
   shortWeek: '10월 5주',
   coverage: '2026.10.26 ~ 10.30 및 10월 주요 딜',
-  title: ['퓨리오사AI 8,200억 원 Series D,', 'Modal $750M · Hex $100M'],
-  summary: '핵심 요약: 퓨리오사AI 8,200억 원 Series D · 국민성장펀드 누적 승인 22.3조 원 · 10월 스타트업 투자 1.59조 원 · 국내 딜 3건 · 해외 딜 4건',
+  title: ['퓨리오사AI 8,200억 원 Series D,', 'Bedrock $600M · Upwind $400M'],
+  summary: '핵심 요약: 퓨리오사AI 8,200억 원 Series D · 국민성장펀드 누적 승인 22.3조 원 · 10월 스타트업 투자 1.59조 원 · 국내 딜 3건 · 해외 딜 8건',
   points: [
     { tag: 'Deal', text: '퓨리오사AI 8,200억 원 Series D, 투자 후 기업가치 약 3.8조 원 (국민성장펀드 3,700억 원)' },
     { tag: 'Policy', text: '국민성장펀드 10월 4건 승인, 누적 승인 22.3조 원 (연간 목표 30조 원의 약 74%)' },
@@ -72,15 +72,27 @@ window.KVW_ISSUES[25] = {
     }
   ],
   deals: [
-    { name: '퓨리오사AI', region: '국내', sector: 'AI 추론 반도체', round: 'Series D', krw: 8200, note: '투자 후 기업가치 약 3.8조 원',
+    { name: '퓨리오사AI', region: '국내', sector: 'AI 추론 반도체', round: 'Series D', krw: 8200, note: '회사 발표 $620M, 포스트머니 $2.9B(약 3.8조 원). RNGD 2026.01 양산, 2026년 2만 장·2027년 4만 장 이상 생산 계획',
       investors: '국민성장펀드(3,700억 원, 최대 투자자), 인피니텀, 한국수출입은행(첫 벤처 직접투자), 유암코·한화자산운용 등', date: '2026.10.29',
-      source: { name: 'ZDNet Korea', url: 'https://zdnet.co.kr/view/?no=20261029090026' } },
+      source: { name: 'FuriosaAI 보도자료 (Business Wire)', url: 'https://via.tt.se/pressmeddelande/4620607/furiosaai-secures-dollar620-million-series-d-to-meet-surging-enterprise-ai-inference-demand-and-accelerate-next-gen-silicon?lang=en' } },
     { name: '프리뉴', region: '국내', sector: '드론 설계·제조', round: 'Series D', krw: 166, note: '누적 506억 원, 기술특례상장 추진',
       investors: 'IBK기업은행·한국투자증권·IBK캐피탈 등 9곳(리드 미기재)', date: '2026.10.30',
       source: { name: '블로터', url: 'https://www.bloter.net/news/articleView.html?idxno=677294' } },
     { name: '나노포지에이아이', region: '국내', sector: 'AI 신소재 개발', round: 'Seed', krw: 146, note: '누적 150억 원 이상',
       investors: '미래에셋벤처투자(리드), DSC인베스트먼트·KDB산업은행·에코프로파트너스 등', date: '2026.10.30',
       source: { name: '스타트업레시피', url: 'https://startuprecipe.co.kr/archives/5839651' } },
+    { name: 'Bedrock Robotics', region: '해외', sector: '자율 건설 장비', round: 'Series C', usdM: 600, note: '포스트머니 $4.1B, 누적 약 $1B',
+      investors: 'CapitalG·Emergence Capital(공동 리드)', date: '2026.10.26',
+      source: { name: "Let's Data Science", url: 'https://letsdatascience.com/news/bedrock-robotics-raises-600-million-series-c-at-41-billion-1d6bab11' } },
+    { name: 'Upwind', region: '해외', sector: '클라우드·AI 보안', round: 'Series C', usdM: 400, note: '밸류 $3.8B',
+      investors: 'Bessemer Venture Partners(리드)', date: '2026.10.28',
+      source: { name: 'AI Weekly', url: 'https://aiweekly.co/alerts/upwind-lands-400m-series-c-at-38b-after-rejecting-datadogs-38b-no-premium-buyout' } },
+    { name: 'General Compute', region: '해외', sector: 'AI 추론 클라우드(비엔비디아 칩)', round: 'Series A', usdM: 100, note: '포스트머니 $800M, 2027년 75MW 배치 계획',
+      investors: 'Blackbird·Abstract Ventures(공동 리드)', date: '2026.10.27',
+      source: { name: 'AI Weekly', url: 'https://aiweekly.co/alerts/general-compute-raises-100m-series-a-at-800m-on-alt-silicon' } },
+    { name: 'Foundry', region: '해외', sector: '로봇 자율 조립 공장', round: 'Series A', usdM: 100, note: '',
+      investors: 'Marlinspike(리드)', date: '2026.10.28',
+      source: { name: 'AI Weekly', url: 'https://aiweekly.co/alerts/foundry-raises-100m-series-a-led-by-marlinspike-to-build-robot-run-factories-on' } },
     { name: 'Modal', region: '해외', sector: 'AI 추론 인프라', round: 'Series D', usdM: 750, note: '밸류 $15.75B, 연환산 매출 $1B 돌파',
       investors: 'Accel(리드)', date: '2026.10.14',
       source: { name: 'AI Weekly', url: 'https://aiweekly.co/alerts/modal-closes-750m-series-d-led-by-accel-at-1575b-valuation-crosses-1b-arr' } },
@@ -97,6 +109,6 @@ window.KVW_ISSUES[25] = {
   insight: [
     '10월 국내 스타트업 투자의 절반 이상(51.6%)이 퓨리오사AI 1건에 집중됨. 반면 시리즈A·B 등 중기 성장 단계는 축소됨',
     '정책금융이 지분투자(퓨리오사AI 3,700억 원)와 설비 대출(PSK 등)에 동시 투입됨. 후기 라운드에서는 정책금융 참여 여부가 성사 변수로 부상함',
-    '해외 자금은 AI 추론 인프라(Modal), 로봇 학습 모델(Machenta), AI 데이터 분석(Hex)으로 계속 유입됨'
+    '해외 자금은 피지컬 AI(Bedrock·Foundry·Machenta)와 AI 인프라(Modal·General Compute), AI 보안(Upwind)으로 집중됨'
   ]
 };
