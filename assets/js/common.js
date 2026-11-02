@@ -68,6 +68,16 @@
     root.innerHTML = '<div class="wrap noscript">' + esc(msg) + '</div>';
   }
 
+  // 방문자 통계(GoatCounter): 공개 주소에서만 실행. 로컬 파일(file://)·점검용 열람은 집계·외부 요청 없음
+  (function () {
+    if (location.hostname !== 'tankhansol.github.io') return;
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://gc.zgo.at/count.js';
+    s.setAttribute('data-goatcounter', 'https://tankhansol.goatcounter.com/count');
+    document.head.appendChild(s);
+  })();
+
   window.KVW = { esc: esc, safeUrl: safeUrl, pad2: pad2, issueHref: issueHref, header: header, footer: footer,
     dealCounts: dealCounts, loadScript: loadScript, fail: fail };
 })();
