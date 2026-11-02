@@ -1,12 +1,12 @@
 /*
- * 제25호 (2026년 11월 1주차 발행, 수록 2026.10.26~10.30) — Gemini 초안 + Claude 국내 보완 + ChatGPT 해외 딜 보완, 2026.11.02 원문 대조 반영
+ * 제25호 (2026년 10월 5주차, 수록 2026.10.26~10.30) — Gemini 초안 + Claude 국내 보완 + ChatGPT 해외 딜 보완, 2026.11.02 원문 대조 반영
  * 금액: 국내 krw(억 원), 해외 usdM(백만 달러). 비공개는 null
  */
 window.KVW_ISSUES = window.KVW_ISSUES || {};
 window.KVW_ISSUES[25] = {
   no: 25,
-  week: '2026년 11월 1주차',
-  shortWeek: '11월 1주',
+  week: '2026년 10월 5주차',
+  shortWeek: '10월 5주',
   coverage: '2026.10.26 ~ 10.30 및 10월 주요 딜',
   title: ['퓨리오사AI 8,200억 원 Series D,', 'Bedrock $600M · Upwind $400M'],
   summary: '핵심 요약: 퓨리오사AI 8,200억 원 Series D · 국민성장펀드 누적 승인 22.3조 원 · 10월 스타트업 투자 1.59조 원 · 국내 딜 3건 · 해외 딜 8건',
