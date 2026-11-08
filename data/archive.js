@@ -5,9 +5,11 @@
  * keywords: 검색용 회사·기관명 (선택). 제목·대표 딜은 목록용 요약입니다.
  */
 window.KVW_ARCHIVE = {
-  latest: 25,
+  latest: 26,
   legacyBase: 'https://mjbfkqkk.gensparkspace.com/issues/issue-',
   issues: [
+    { no: 26, week: '11월 1주', local: true, title: '민간벤처모펀드 올해 7개 · 유로보틱스 400억 원 Series A', deals: '유로보틱스 400억 원 · Zipline $1.5B · Shield AI $1B',
+      keywords: '유로보틱스 무빈 MOVIN 액션핏 페르소나AI Zipline Shield AI Echodyne Ocient Supa 민간벤처모펀드 하나증권 하나벤처스 키움 신한 삼성물산 퓨처스케이프 건설 로보틱스 Bedrock Icon 데이터센터 중간선거' },
     { no: 25, week: '10월 5주', local: true, title: '퓨리오사AI 8,200억 원 Series D · 국민성장펀드 누적 22.3조 원', deals: '퓨리오사AI 8,200억 원 · Bedrock $600M · Upwind $400M',
       keywords: 'Bedrock Robotics Upwind General Compute Foundry 퓨리오사AI 프리뉴 나노포지에이아이 Modal Hex Machenta FORT Robotics 국민성장펀드 대전 D-Growth Fund ICI 스타트업레시피' },
     { no: 24, week: '10월 4주', local: true, title: '벤처투자법 개정안 국무회의 통과 · Tenstorrent $1.5B Series E', deals: 'Tenstorrent $1.5B · 더휴식 650억 원 · Eka Robotics $150M',
