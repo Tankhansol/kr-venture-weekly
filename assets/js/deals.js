@@ -28,7 +28,8 @@
   function row(d) {
     var u = d.source && K.safeUrl(d.source.url);
     var src = u ? '<a href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(d.source.name) + '</a>' : '';
-    return '<tr><td class="co">' + esc(d.name) + '<span class="nt">' + esc(d.region) + ' · ' + esc(d.sector) + '</span></td>' +
+    var isNew = d.issues.indexOf(A.latest) !== -1;
+    return '<tr' + (isNew ? ' class="is-new"' : '') + '><td class="co">' + esc(d.name) + '<span class="nt">' + esc(d.region) + ' · ' + esc(d.sector) + '</span></td>' +
       '<td style="white-space:nowrap">' + esc(d.round) + '</td>' +
       '<td class="num r" style="white-space:nowrap">' + esc(C.fmtDealAmount(d)) + (d.note ? '<span class="nt">' + esc(d.note) + '</span>' : '') + '</td>' +
       '<td>' + esc(d.investors) + '</td>' +
@@ -59,6 +60,7 @@
       '<label class="search sort">정렬<select id="deal-sort"><option value="date">발표일 최신순</option><option value="amount">금액 큰 순</option></select></label>' +
       '</div>' +
       '<p class="small muted" id="deal-status" role="status" style="margin:14px 0 0"></p>' +
+      '<p class="small muted new-legend"><span class="swatch" aria-hidden="true"></span>최신호(No. ' + esc(K.pad2(A.latest)) + ') 수록 딜</p>' +
       '<div class="table-box" style="margin-top:12px"><table class="deal-table deals-all" style="min-width:920px"><thead><tr>' +
       '<th>기업</th><th>라운드</th><th class="r">금액</th><th>주요 투자자</th><th>발표일 · 출처</th><th>수록 호</th>' +
       '</tr></thead><tbody id="deal-body"></tbody></table></div>' +

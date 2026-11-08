@@ -218,6 +218,9 @@ tr.current td { background: var(--accent-soft); font-weight: 700; }
 .deal-table .nt { display: block; font-size: 13px; font-weight: 400; color: var(--muted); font-family: var(--sans); white-space: normal; }
 
 /* Deals 모아보기 */
+.deals-all tr.is-new td { background: #FBF4EE; }
+.new-legend { display: flex; align-items: center; gap: 8px; margin: 6px 0 0; }
+.new-legend .swatch { display: inline-block; width: 14px; height: 14px; border: 1px solid #E8D5C6; border-radius: 3px; background: #FBF4EE; }
 .deal-tools { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 16px 20px; }
 .seg { display: inline-flex; border: 1px solid #C9C7C0; border-radius: 6px; overflow: hidden; background: var(--surface); }
 .seg-btn { min-height: 44px; min-width: 64px; padding: 0 16px; border: 0; border-right: 1px solid #C9C7C0; background: transparent; font-family: inherit; font-size: 15px; color: var(--muted); cursor: pointer; }
