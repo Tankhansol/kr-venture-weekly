@@ -9,9 +9,9 @@ window.KVW_ARCHIVE = {
   legacyBase: 'https://mjbfkqkk.gensparkspace.com/issues/issue-',
   issues: [
     { no: 27, week: '11월 2주', local: true, title: '엔비디아 국내 AI 스타트업 4곳 투자 계획 · 10월 국내 투자 1조 원', deals: '메디컬에이아이 300억 원 · Mercor $750M · Fractile $720M',
-      keywords: '메디컬에이아이 엔트리움 에버엑스 레이와트 숨빗AI Mercor Fractile Torus Path Robotics Q-CTRL Nominal 엔비디아 업스테이지 리얼월드 포인트투테크놀로지 모티프테크놀로지스 매쉬업벤처스 Skydio Axon THE VC' },
+      keywords: '메디컬에이아이 페르소나AI 엔트리움 에버엑스 레이와트 숨빗AI Mercor Fractile Torus Path Robotics Q-CTRL Nominal 엔비디아 업스테이지 리얼월드 포인트투테크놀로지 모티프테크놀로지스 매쉬업벤처스 Skydio Axon THE VC' },
     { no: 26, week: '11월 1주', local: true, title: '민간벤처모펀드 올해 7개 · 유로보틱스 400억 원 Series A', deals: '유로보틱스 400억 원 · Zipline $1.5B · Shield AI $1B',
-      keywords: '유로보틱스 무빈 MOVIN 액션핏 페르소나AI Zipline Shield AI Echodyne Ocient Supa 민간벤처모펀드 하나증권 하나벤처스 키움 신한 삼성물산 퓨처스케이프 건설 로보틱스 Bedrock Icon 데이터센터 중간선거' },
+      keywords: '유로보틱스 무빈 MOVIN 액션핏 Zipline Shield AI Echodyne Ocient Supa 민간벤처모펀드 하나증권 하나벤처스 키움 신한 삼성물산 퓨처스케이프 건설 로보틱스 Bedrock Icon 데이터센터 중간선거' },
     { no: 25, week: '10월 5주', local: true, title: '퓨리오사AI 8,200억 원 Series D · 국민성장펀드 누적 22.3조 원', deals: '퓨리오사AI 8,200억 원 · Bedrock $600M · Upwind $400M',
       keywords: 'Bedrock Robotics Upwind General Compute Foundry 퓨리오사AI 프리뉴 나노포지에이아이 Modal Hex Machenta FORT Robotics 국민성장펀드 대전 D-Growth Fund ICI 스타트업레시피' },
     { no: 24, week: '10월 4주', local: true, title: '벤처투자법 개정안 국무회의 통과 · Tenstorrent $1.5B Series E', deals: 'Tenstorrent $1.5B · 더휴식 650억 원 · Eka Robotics $150M',
