@@ -45,6 +45,7 @@
       '<p class="name">KR Venture Weekly</p>' +
       '<p>벤처투자 이슈는 매주, 국내 통계는 매월 정리하는 개인 운영 사이트입니다.</p>' +
       '<p>칼럼 의견은 운영자 개인 의견이며 소속 기관의 공식 입장이 아닙니다.</p>' +
+      '<p>방문 통계는 GoatCounter로 집계합니다.</p>' +
       '<p class="by">Created by hansol.jang</p>' +
       '</div></footer>';
   }

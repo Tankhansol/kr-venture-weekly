@@ -19,8 +19,26 @@
 
   function tagHtml(t, light) { return '<span class="tag' + (light ? ' tag-light' : '') + '">' + esc(t) + '</span>'; }
 
+  // 상단 대표 딜: 국내·해외 각각 금액 상위 HERO_TOP건 (금액 미표기는 뒤, 동액은 데이터 순서 유지)
+  var HERO_TOP = 3;
+  function topDeals(deals) {
+    deals = deals || [];
+    function pick(region, key) {
+      return deals.map(function (d, i) { return { d: d, i: i }; })
+        .filter(function (x) { return (x.d.region === '해외') === (region === '해외'); })
+        .sort(function (a, b) {
+          var va = typeof a.d[key] === 'number' && isFinite(a.d[key]) ? a.d[key] : -Infinity;
+          var vb = typeof b.d[key] === 'number' && isFinite(b.d[key]) ? b.d[key] : -Infinity;
+          return vb === va ? a.i - b.i : (vb > va ? 1 : -1);
+        }).slice(0, HERO_TOP).map(function (x) { return x.d; });
+    }
+    var list = pick('국내', 'krw').concat(pick('해외', 'usdM'));
+    return { list: list, rest: deals.length - list.length };
+  }
+
   function hero(I) {
     var cnt = K.dealCounts(I.deals);
+    var top = topDeals(I.deals);
     return '<section class="hero" id="weekly"><div class="wrap">' +
       '<p class="hero-intro">국내 벤처투자 브리핑 (Weekly)</p>' +
       '<p>국내 벤처투자 시장 주요 이슈를 주간단위로 제공합니다.</p>' +
@@ -35,12 +53,12 @@
       '</article>' +
       '<aside class="deals-card" aria-label="Weekly Deals"><div class="card-head"><h3>Weekly Deals</h3>' +
       '<span class="small" style="color:var(--on-dark-2)">' + esc(cnt.label) + '</span></div>' +
-      '<ul>' + (I.deals || []).map(function (d) {
+      '<ul>' + top.list.map(function (d) {
         return '<li><span><span class="co">' + esc(d.name) + '</span><span class="rd">' + esc(d.round) + '</span></span>' +
           '<span class="amt">' + esc(C.fmtDealAmount(d)) + '</span></li>';
       }).join('') + '</ul>' +
-      '<p class="foot">단위: 국내 억 원, 해외 US$ (M=백만, B=10억)</p>' +
-      '<a class="all-deals" href="deals.html">전체 딜 모아보기 →</a></aside>' +
+      '<p class="foot">' + (top.rest ? '국내·해외 각 금액 상위 ' + HERO_TOP + '건 표시 · ' : '') + '단위: 국내 억 원, 해외 US$</p>' +
+      '<a class="all-deals" href="issues/issue-' + K.pad2(I.no) + '.html#deal">' + (top.rest ? '외 ' + top.rest + '건 · ' : '') + '이번 호 딜 전체 보기 →</a></aside>' +
       '</div></div></section>';
   }
 

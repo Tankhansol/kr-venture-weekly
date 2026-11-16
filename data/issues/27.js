@@ -10,15 +10,16 @@ window.KVW_ISSUES[27] = {
   coverage: '2026.11.09 ~ 11.13',
   title: ['메디컬에이아이 300억 원 Pre-IPO,', 'Mirendil $1B · Mercor $750M'],
   summary: '핵심 요약: 젠슨 황 엔비디아 CEO 사임 · 엔비디아 국내 AI 스타트업 4곳 투자 계획 · 10월 국내 투자 1조 원 · 국내 딜 6건 · 해외 딜 7건',
+  correction: '2026.11.16 정정: 라운드 출처 보완, Torus 미기재, 문구 2건 원문 표현으로 수정',
   points: [
-    { tag: 'Policy', text: '젠슨 황 엔비디아 CEO 사임, 비상장사 229곳 지분 보유한 AI 최대 투자자 리더십 공백' },
-    { tag: 'Policy', text: '엔비디아, 업스테이지·리얼월드 등 국내 AI 스타트업 4곳 투자 계획 발표 (금액 비공개)' },
+    { tag: 'Market', text: '젠슨 황 엔비디아 CEO 사임, 비상장사 229곳 지분 보유한 AI 최대 투자자 리더십 공백' },
+    { tag: 'Market', text: '엔비디아, 업스테이지·리얼월드 등 국내 AI 스타트업 4곳 투자 계획 발표 (금액 미언급)' },
     { tag: 'Report', text: 'THE VC 10월 국내 투자 1조 187억 원, 5개월 만에 1조 원 재돌파 (AI·로봇 비중 53%)' },
     { tag: 'Deal', text: '메디컬에이아이 300억 원 Pre-IPO · Mirendil $1B Series A · Mercor $750M Series D' }
   ],
   articles: [
     {
-      type: 'policy', marker: 'POLICY · 글로벌 이슈',
+      type: 'market', marker: 'MARKET · 글로벌 이슈',
       title: '젠슨 황 엔비디아 CEO 사임, AI 스타트업 최대 투자자 리더십 공백',
       facts: [
         '2026.11.12(현지) 사장·CEO·이사직 즉시 사임, 회사는 사유 미공개(언론은 사생활 논란 보도)',
@@ -34,13 +35,13 @@ window.KVW_ISSUES[27] = {
       ]
     },
     {
-      type: 'policy', marker: 'POLICY · 글로벌 CVC',
+      type: 'market', marker: 'MARKET · 글로벌 CVC',
       title: '엔비디아, 국내 AI 스타트업 4곳 투자 계획 발표',
       facts: [
         '2026.11.09 과학기술정보통신부와 함께 연 AI 스타트업 파트너십 포럼(코엑스)에서 발표',
         '포인트투테크놀로지(AI 데이터센터 칩 간 데이터 전송): 투자 기업으로 발표',
         '업스테이지(시리즈C 2차 진행 중)·모티프테크놀로지스·리얼월드(로봇 파운데이션 모델): 투자 예정',
-        '4곳 모두 투자 금액 비공개',
+        '4곳 모두 기사에 투자 금액 미언급',
         '같은 날 리벨리온 R200 NPU를 NVLink Fusion으로 연결, SKT AI 데이터센터 배치 협력 발표(금액 없음)'
       ],
       sources: [
@@ -49,7 +50,7 @@ window.KVW_ISSUES[27] = {
       ]
     },
     {
-      type: 'policy', marker: 'POLICY · 민간 펀드',
+      type: 'market', marker: 'MARKET · 민간 펀드',
       title: '매쉬업벤처스, 정책자금 없는 259억 원 민간 펀드 결성',
       facts: [
         '매쉬업퍼스트빌리버벤처투자조합5호 259억 원, 모태펀드 등 정책자금 미참여',
@@ -61,7 +62,7 @@ window.KVW_ISSUES[27] = {
       ]
     },
     {
-      type: 'policy', marker: 'POLICY · 전략적 투자',
+      type: 'market', marker: 'MARKET · 전략적 투자',
       title: 'Axon, Skydio에 $1.2B 투자·공공안전 독점 유통 (11월 1주 소식)',
       facts: [
         'Skydio 투자 전 기업가치 $5.2B, Axon 지분 약 15% → 약 37%(전 단계 종결 시)',
@@ -73,7 +74,7 @@ window.KVW_ISSUES[27] = {
       ]
     },
     {
-      type: 'policy', marker: 'POLICY · 해외 펀드',
+      type: 'market', marker: 'MARKET · 해외 펀드',
       title: 'Norwest 18호 펀드 $4B 결성, 65년 역사상 최대',
       facts: [
         '직전 17호 $3B(2024.04), 결성 후 운용자산 $18B',
@@ -85,7 +86,7 @@ window.KVW_ISSUES[27] = {
       ]
     },
     {
-      type: 'policy', marker: 'POLICY · 회수 시장',
+      type: 'market', marker: 'MARKET · 회수 시장',
       title: 'Anthropic IPO 공모가 범위 $70~78 제시, 11.19 나스닥 상장 예정',
       facts: [
         '8.25억 주 공모, 범위 상단 기준 최대 약 $64.4B 조달',
@@ -114,7 +115,8 @@ window.KVW_ISSUES[27] = {
       title: '11월 2주 국내 스타트업 투자: 37곳 유치, 공개 14개사 1,141억 원',
       facts: [
         '투자 유치 스타트업 37곳, 금액 공개 14개사 합계 1,141억 원 (스타트업레시피 집계, 11.09~11.13)',
-        '100억 원 이상 5건 중 4건이 의료 AI·의료기기(메디컬에이아이·에버엑스·레이와트·숨빗AI)'
+        '100억 원 이상 5개사 중 4곳*이 의료 AI·의료기기(메디컬에이아이·에버엑스·레이와트·숨빗AI)',
+        '※ *직접 계산한 값: 기사 속 100억 원 이상 5개사 중 엔트리움(반도체 소재) 제외 4곳'
       ],
       sources: [
         { name: '스타트업레시피 (이번주투자)', url: 'https://startuprecipe.co.kr/archives/5841423', date: '2026.11.14' }
@@ -122,7 +124,7 @@ window.KVW_ISSUES[27] = {
     }
   ],
   deals: [
-    { name: '메디컬에이아이', region: '국내', sector: '심전도 AI', round: 'Pre-IPO', krw: 300, note: '최대주주 IMM으로 변경 예정',
+    { name: '메디컬에이아이', region: '국내', sector: '심전도 AI', round: 'Pre-IPO', krw: 300, note: '최대주주 IMM으로 변경 전망',
       investors: 'IMM인베스트먼트(리드)', date: '2026.11.09~13',
       source: { name: '스타트업레시피', url: 'https://startuprecipe.co.kr/archives/5841423' } },
     { name: '엔트리움', region: '국내', sector: '반도체 테스트 소켓 소재', round: '미기재', krw: 166, note: '',
@@ -146,10 +148,10 @@ window.KVW_ISSUES[27] = {
     { name: 'Mercor', region: '해외', sector: 'AI 학습용 전문가 데이터', round: 'Series D', usdM: 750, note: '밸류 $20B',
       investors: 'Benchmark·General Catalyst·NVIDIA·Salesforce 등(리드 미기재)', date: '2026.11.10',
       source: { name: 'AI Weekly (Reuters 인용)', url: 'https://aiweekly.co/alerts/mercor-raises-750m-series-d-at-20b-doubling-in-a-year' } },
-    { name: 'Fractile', region: '해외', sector: 'AI 추론 칩', round: 'Series C(보도)', usdM: 720, note: '포스트머니 $7B',
-      investors: 'Thrive Capital(공동 리드), Founders Fund·Lightspeed·CapitalG 등', date: '2026.11.11',
-      source: { name: 'AI Weekly', url: 'https://aiweekly.co/alerts/fractile-raises-720m-at-7b-valuation-up-from-11b-in-may' } },
-    { name: 'Torus', region: '해외', sector: '모듈형 AI 데이터센터', round: 'Series C(보도)', usdM: 500, note: '',
+    { name: 'Fractile', region: '해외', sector: 'AI 추론 칩', round: 'Series C', usdM: 720, note: '밸류 $7B(FT 보도 인용)',
+      investors: 'Thrive Capital·Founders Fund·Lightspeed·Redpoint(공동 리드), CapitalG 등', date: '2026.11.11',
+      source: { name: 'The Next Web', url: 'https://thenextweb.com/news/fractile-7bn-valuation-720m-ai-inference-chips' } },
+    { name: 'Torus', region: '해외', sector: '모듈형 AI 데이터센터', round: '미기재(growth capital)', usdM: 500, note: '',
       investors: 'Magnetar(리드), ICONIQ 등', date: '2026.11.11',
       source: { name: 'Pulse 2.0', url: 'https://pulse2.com/torus-500-million-financing-supports-foundry-modular-ai-infrastructure-launch/' } },
     { name: 'Path Robotics', region: '해외', sector: '용접 자동화 피지컬 AI', round: 'Series E', usdM: 300, note: '포스트머니 $2.45B',
@@ -159,8 +161,8 @@ window.KVW_ISSUES[27] = {
       investors: 'Salesforce Ventures(리드)', date: '2026.11.12',
       source: { name: 'Startup Daily', url: 'https://www.startupdaily.net/topic/funding/quantum-of-unicorn-q-ctrl-hits-1-4-billion-valuation-from-425m-series-c/' } },
     { name: 'Nominal', region: '해외', sector: '하드웨어 시험 AI', round: 'Series C', usdM: 240, note: '밸류 $3B',
-      investors: 'Lightspeed·Insight Partners(공동 리드)', date: '2026.11.09',
-      source: { name: 'AI Weekly (Bloomberg 인용)', url: 'https://aiweekly.co/alerts/nominal-triples-to-3b-on-240m-lightspeed-insight-round' } }
+      investors: 'Lightspeed(리드)·Insight Partners(공동 리드)', date: '2026.11.09',
+      source: { name: 'Value Add Pulse (SiliconANGLE 인용)', url: 'https://valueaddvc.com/pulse/nominal-triples-3b-valuation-240m-series-c-2026' } }
   ],
   insight: [
     '10월 국내 투자는 5개월 만에 1조 원을 넘었지만, 상위 5개사가 약 66%를 차지해 대형 딜 집중이 이어짐',

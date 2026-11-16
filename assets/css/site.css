@@ -31,6 +31,7 @@ a:hover { color: var(--muted); }
 .wrap-narrow { max-width: 880px; margin: 0 auto; padding: 0 24px; }
 .muted { color: var(--muted); }
 .small { font-size: 13px; }
+[hidden] { display: none !important; }
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
 /* 헤더 */
@@ -232,7 +233,7 @@ tr.current td { background: var(--accent-soft); font-weight: 700; }
 .deals-all td:nth-child(4) { min-width: 200px; }
 .deals-all td:nth-child(3) { min-width: 170px; }
 .deals-all td:nth-child(5) { min-width: 140px; }
-@media (max-width: 680px) { .grid-3.deal-figs { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; } .deal-figs .card { padding: 14px 12px; } .deal-figs .value { font-size: 22px; } .deal-figs .note { display: none; } }
+@media (max-width: 680px) { .grid-3.deal-figs { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; } .deal-figs .card { padding: 14px 12px; } .deal-figs .value { font-size: 22px; } .deal-figs .note { font-size: 11px; white-space: nowrap; } }
 .deals-all td:last-child a { color: var(--ink); }
 .deals-card .all-deals { display: inline-flex; align-items: center; min-height: 44px; margin-top: 4px; color: var(--accent-on-dark); font-size: 14px; font-weight: 700; text-decoration: none; }
 .deals-card .all-deals:hover { color: #FFFFFF; }

@@ -13,6 +13,7 @@
   document.title = 'No. ' + I.no + ' · ' + I.week + ' | KR Venture Weekly';
 
   var policy = (I.articles || []).filter(function (a) { return a.type === 'policy'; });
+  var market = (I.articles || []).filter(function (a) { return a.type === 'market'; });
   var report = (I.articles || []).filter(function (a) { return a.type === 'report'; });
   var deals = I.deals || [];
   var cnt = K.dealCounts(deals);
@@ -80,6 +81,7 @@
 
   var sections = [
     { id: 'policy', label: 'Policy', count: policy.length, html: function () { return policy.map(article).join(''); } },
+    { id: 'market', label: 'Market', count: market.length, html: function () { return market.map(article).join(''); } },
     { id: 'report', label: 'Report', count: report.length, html: function () { return report.map(article).join(''); } },
     { id: 'deal', label: 'Deal', count: deals.length, html: dealTable }
   ].filter(function (x) { return x.count > 0; }); // 0건 섹션은 생략
@@ -98,7 +100,7 @@
   var insights = (I.insight || []).filter(function (x) { return String(x || '').trim(); });
 
   function render() {
-    var articles = policy.length + report.length;
+    var articles = policy.length + market.length + report.length;
     root.innerHTML = K.header(BASE, A.latest === no ? 'weekly' : '') +
       '<main class="wrap-narrow">' +
       '<section class="issue-head"><p class="issue-meta">No. ' + esc(I.no) + ' · ' + esc(I.week) + ' · 기사 ' + articles + '건 · 딜 ' + deals.length + '건</p>' +

@@ -8,26 +8,15 @@ window.KVW_ISSUES[24] = {
   week: '2026년 10월 4주차',
   shortWeek: '10월 4주',
   coverage: '2026.10.19 ~ 10.23 및 10월 주요 딜',
-  title: ['벤처투자법 개정안 국무회의 통과,', 'Tenstorrent $1.5B Series E'],
-  summary: '핵심 요약: 벤처투자법 개정안 국무회의 통과(2027.03.30 시행 예정) · 국내 딜 3건 · 해외 딜 3건',
-  correction: '2026.10.27 원문을 확인하지 못한 항목 삭제: 한국벤처투자 9월 수시 출자 숏리스트, 투자 의무 완화 내용',
+  title: ['더휴식 650억 원 Pre-IPO,', 'Tenstorrent $1.5B Series E'],
+  summary: '핵심 요약: 더휴식 650억 원 Pre-IPO · Kopin 광학 인터커넥트 백서 · 국내 딜 3건 · 해외 딜 3건',
+  correction: '정정: 원문 미확인 2건 삭제(10.27), 21호와 중복된 벤처투자법 기사 삭제(11.16)',
   points: [
-    { tag: 'Policy', text: '벤처투자법 개정안 국무회의 통과, 부당 조기상환·과도한 리픽싱 조건 제한 (2027.03.30 시행 예정)' },
+    { tag: 'Deal', text: '더휴식 650억 원 Pre-IPO · Tenstorrent $1.5B Series E(Post-money $6.2B)' },
     { tag: 'Report', text: 'Kopin 백서, 1만 GPU 가정 시 AI 학습 시간 23~38% 단축 (모델링 값)' }
   ],
   // figures 생략 시 국내·해외 최대 딜과 딜 건수로 자동 구성
   articles: [
-    {
-      type: 'policy', marker: 'POLICY · 벤처투자법',
-      title: '벤처투자법 개정안 국무회의 통과, 2027.03.30 시행 예정',
-      facts: [
-        '투자 계약 내 부당한 조기상환 청구 조건과 IPO 실패를 이유로 한 과도한 리픽싱 조건을 불공정 계약조건으로 제한',
-        '2026.09.29 공포 예정, 2027.03.30 시행 예정. 시행 전 불공정 계약 유형·제재 기준 하위법령 정비 예정'
-      ],
-      sources: [
-        { name: '벤처스퀘어', url: 'https://www.venturesquare.net/1116149/', date: '2026.09.25' }
-      ]
-    },
     {
       type: 'report', marker: 'REPORT · 데이터센터 인터커넥트',
       title: 'Kopin 백서: 1만 GPU 가정 시 AI 학습 시간 23~38% 단축 (모델링 값)',

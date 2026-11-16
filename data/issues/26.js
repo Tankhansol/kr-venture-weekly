@@ -12,13 +12,13 @@ window.KVW_ISSUES[26] = {
   summary: '핵심 요약: 금융권 민간벤처모펀드 올해 7개 · 미국 데이터센터 규제 우려 · 건설 로보틱스 투자 $1.6B · 국내 딜 3건 · 해외 딜 4건',
   correction: '2026.11.16 정정: 페르소나AI는 발표일(11.15)이 수록 기간 밖이라 27호로 이동, 액션핏 발표일을 10.30으로 정정',
   points: [
-    { tag: 'Policy', text: '금융권 민간벤처모펀드 올해 7개, 합산 약정 약 9,040억 원' },
+    { tag: 'Market', text: '금융권 민간벤처모펀드 올해 7개, 합산 약정 약 9,040억 원' },
     { tag: 'Deal', text: '유로보틱스 400억 원 Series A · 무빈 100억 원 Series A, 피지컬 AI 소프트웨어·데이터 투자' },
     { tag: 'Deal', text: 'Zipline $1.5B(밸류 $21.5B) · Shield AI $1B Series H(밸류 $28.8B)' }
   ],
   articles: [
     {
-      type: 'policy', marker: 'POLICY · 민간모펀드',
+      type: 'market', marker: 'MARKET · 민간모펀드',
       title: '금융권 민간벤처모펀드 올해 7개, 합산 약정 약 9,040억 원',
       facts: [
         '결성 완료 4곳(약정 합계 6,040억 원): 하나벤처스 1,000억 원(5월), 키움인베스트먼트 2,040억 원(6월), 신한벤처투자 1,000억 원(7월), 하나증권 2,000억 원(9월)',
@@ -44,7 +44,7 @@ window.KVW_ISSUES[26] = {
       ]
     },
     {
-      type: 'policy', marker: 'POLICY · 오픈이노베이션',
+      type: 'market', marker: 'MARKET · 오픈이노베이션',
       title: '삼성물산 2026 퓨처스케이프 데모데이, 스타트업 6곳 실증 성과 공유 (10월 5주 소식)',
       facts: [
         '삼성물산 건설부문·서울경제진흥원 공동 운영, 7월부터 약 3개월간 실증',
