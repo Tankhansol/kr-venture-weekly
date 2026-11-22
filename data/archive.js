@@ -5,9 +5,11 @@
  * keywords: 검색용 회사·기관명 (선택). 제목·대표 딜은 목록용 요약입니다.
  */
 window.KVW_ARCHIVE = {
-  latest: 27,
+  latest: 28,
   legacyBase: 'https://mjbfkqkk.gensparkspace.com/issues/issue-',
   issues: [
+    { no: 28, week: '11월 3주', local: true, title: '1~3분기 벤처투자·펀드결성 역대 최대 · Anthropic 나스닥 상장', deals: '메디인테크 338억 원 · Isomorphic Labs $5B · Genesis AI $500M',
+      keywords: '메디인테크 익스톨 헥사로보틱스 위너스일렉 Isomorphic Labs Genesis AI Model ML BrightAI Humyn Labs Anthropic IPO 엔비디아 Palo Alto Applied Compute 중기부 벤처투자 펀드결성 수출통제 스타트업레시피' },
     { no: 27, week: '11월 2주', local: true, title: '젠슨 황 엔비디아 CEO 사임 · 엔비디아 국내 AI 스타트업 4곳 투자 계획', deals: '메디컬에이아이 300억 원 · Mirendil $1B · Mercor $750M',
       keywords: '젠슨 황 Mirendil Norwest Anthropic IPO 리벨리온 SKT 메디컬에이아이 페르소나AI 엔트리움 에버엑스 레이와트 숨빗AI Mercor Fractile Torus Path Robotics Q-CTRL Nominal 엔비디아 업스테이지 리얼월드 포인트투테크놀로지 모티프테크놀로지스 매쉬업벤처스 Skydio Axon THE VC' },
     { no: 26, week: '11월 1주', local: true, title: '민간벤처모펀드 올해 7개 · 유로보틱스 400억 원 Series A', deals: '유로보틱스 400억 원 · Zipline $1.5B · Shield AI $1B',
