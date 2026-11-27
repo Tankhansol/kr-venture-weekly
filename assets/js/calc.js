@@ -205,7 +205,8 @@
     // 점검: 실패 항목은 화면에 경고로 노출
     var checks = [];
     function check(ok, msg) { if (!ok) checks.push(msg); }
-    check(near(sum(sectors.map(function (s) { return s.amt; })), inv[n], 0.5),
+    // 원자료 업종 금액은 반올림으로 총액과 1~2억 원 차이가 날 수 있어 허용 오차 2억 원
+    check(near(sum(sectors.map(function (s) { return s.amt; })), inv[n], 2),
       '업종별 금액 합계가 신규투자 총액과 다름');
     (D.stages || []).forEach(function (s) {
       check(near(sum([s.early, s.mid, s.late]), 100, 0.2), '업력별 비중 합계가 100%가 아님 (' + s.year + ')');

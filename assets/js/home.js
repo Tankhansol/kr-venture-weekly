@@ -180,7 +180,7 @@
 
     var firms = (M.newFirms || []).map(function (f) {
       return '<li><span>' + esc(f.name) + '</span><span class="num">' + esc(f.date) + '</span></li>';
-    }).join('');
+    }).join('') || '<li><span class="muted">' + esc(M.month) + '월 신규 등록 없음 (원자료 표기 "-")</span></li>';
 
     var ipo = (M.ipoShare || []).map(function (p, i, arr) {
       return '<span class="chip' + (i === arr.length - 1 ? ' current' : '') + '"><span class="y">' + esc(p.year) + '</span><span class="v">' + esc(C.fmt1(p.pct)) + '%</span></span>';
