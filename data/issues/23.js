@@ -59,7 +59,7 @@ window.KVW_ISSUES[23] = {
     { name: '대동로보틱스', region: '국내', sector: '건설 현장 로봇', round: 'Series A', krw: 50, note: '',
       investors: '엑스플로인베스트먼트·포스코기술투자·나우아이비캐피탈', date: '2026.07.06',
       source: { name: 'MTN', url: 'https://news.mtn.co.kr/news-detail/2026070614473581371' } },
-    { name: 'NdotLight', region: '국내', sector: '3D 시뮬레이션 데이터', round: '후속 투자', krw: 150, note: '라운드명 원문 미기재',
+    { name: 'NdotLight', region: '국내', sector: '3D 시뮬레이션 데이터', round: '후속 투자', krw: 150, note: '',
       investors: 'KDB산업은행(리드), 네이버 D2SF·IMM인베스트먼트 등', date: '2026.08.12',
       source: { name: '헬로티', url: 'https://www.hellot.net/news/article.html?no=114302' } },
     { name: 'Veir', region: '해외', sector: '데이터센터 초전도 전력', round: 'Series C', usdM: 110, note: '누적 $225M',

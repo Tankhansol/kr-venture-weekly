@@ -81,14 +81,14 @@ window.KVW_ISSUES[17] = {
       "name": "UBTECH Robotics",
       "region": "해외",
       "sector": "휴머노이드 관절 모듈",
-      "round": "미기재",
+      "round": "Series A+",
       "note": "상장사(홍콩)",
-      "investors": "원문 미기재",
+      "investors": "Dongzheng Capital(리드), 지난셴싱투자그룹·쯔보하이테크구 벤처캐피탈(신규), Legend Star(기존)",
       "date": "2026.09.06",
       "usdM": 13.9,
       "source": {
-        "name": "IndianWeb2",
-        "url": "https://www.indianweb2.com/2026/09/chinas-ubtech-lands-139m-for.html"
+        "name": "Startup Researcher",
+        "url": "https://www.startupresearcher.com/news/china-s-ubtech-raises-usd13-9-million-in-series-a-round"
       }
     }
   ],

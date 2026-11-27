@@ -92,7 +92,7 @@ window.KVW_ISSUES[5] = {
       "name": "Recursive Superintelligence",
       "region": "해외",
       "sector": "프론티어 AI",
-      "round": "미기재",
+      "round": "",
       "note": "밸류 $4.65B",
       "investors": "GV·Greycroft(리드), AMD Ventures·NVIDIA 참여",
       "date": "2026.05.13",

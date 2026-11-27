@@ -132,14 +132,14 @@ window.KVW_ISSUES[2] = {
       "name": "Reliable Robotics",
       "region": "해외",
       "sector": "자율 항공기",
-      "round": "미기재",
+      "round": "Series D",
       "note": "",
       "investors": "Nimble Partners(리드)",
       "date": "2026.04.21",
       "usdM": 160,
       "source": {
-        "name": "Pulse 2.0",
-        "url": "https://pulse2.com/reliable-robotics-160-million-raised-to-scale-autonomous-aircraft-systems/amp/"
+        "name": "Fenwick (Reliable Robotics 자문)",
+        "url": "https://www.fenwick.com/insights/experience/fenwick-represents-reliable-robotics-in-160m-series-d-funding"
       }
     },
     {

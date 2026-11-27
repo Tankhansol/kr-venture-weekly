@@ -86,12 +86,12 @@ window.KVW_ISSUES[14] = {
       "sector": "휴머노이드 로봇",
       "round": "Series A",
       "note": "국내 시리즈 A 역대 최대",
-      "investors": "원문 미기재",
+      "investors": "스톤브릿지벤처스·에이티넘인베스트먼트 등(기존), IMM인베스트먼트·SL인베스트먼트·KB인베스트먼트 등(신규), 산업은행·기업은행",
       "date": "2026.07.13",
       "krw": 1550,
       "source": {
-        "name": "유니콘팩토리",
-        "url": "https://www.unicornfactory.co.kr/article/2026071308233216474"
+        "name": "바이라인네트워크",
+        "url": "https://byline.network/?p=9004111222611895"
       }
     },
     {

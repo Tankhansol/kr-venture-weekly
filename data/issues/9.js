@@ -117,7 +117,7 @@ window.KVW_ISSUES[9] = {
       "name": "Mind Robotics",
       "region": "해외",
       "sector": "범용 로봇 플랫폼",
-      "round": "미기재(Series A 후속)",
+      "round": "",
       "note": "누적 $1B 이상, Rivian 전략 파트너",
       "investors": "Kleiner Perkins(리드)",
       "date": "2026.05.13",

@@ -43,7 +43,7 @@ window.KVW_ISSUES[21] = {
       "name": "EliseAI",
       "region": "해외",
       "sector": "주거·헬스케어 운영 AI",
-      "round": "미기재",
+      "round": "",
       "note": "밸류 $4B",
       "investors": "a16z·Bessemer Venture Partners(공동 리드)",
       "date": "2026.09.29",
@@ -73,12 +73,12 @@ window.KVW_ISSUES[21] = {
       "sector": "물류창고 이기종 로봇 OS",
       "round": "Seed",
       "note": "",
-      "investors": "원문 미기재",
+      "investors": "Base10 Partners·Bonfire Ventures(공동 리드), CoFound Partners",
       "date": "2026.09.30",
       "usdM": 8,
       "source": {
-        "name": "SiliconAngle",
-        "url": "https://siliconangle.com/2026/09/30/destro-ai-raises-8m-to-coordinate-mixed-robot-fleets-in-enterprise-warehouses/"
+        "name": "Destro AI 보도자료 (Robotics 24/7)",
+        "url": "https://www.robotics247.com/press-releases/destro-ai-raises-8m-to-give-warehouse-robots-a-shared-mind"
       }
     },
     {
@@ -87,12 +87,12 @@ window.KVW_ISSUES[21] = {
       "sector": "위성 공간 컴퓨팅",
       "round": "Seed",
       "note": "",
-      "investors": "원문 미기재",
+      "investors": "non sibi ventures(리드)",
       "date": "2026.10.01",
       "usdM": 8,
       "source": {
-        "name": "Space in Africa",
-        "url": "https://spaceinafrica.com/2026/10/01/satlyt-raises-usd-8-million-seed/"
+        "name": "Via Satellite",
+        "url": "https://satellitetoday.com/finance/2026/10/02/satlyt-secures-8m-in-seed-financing"
       }
     }
   ],

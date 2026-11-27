@@ -78,14 +78,14 @@ window.KVW_ISSUES[12] = {
       "name": "Joulent",
       "region": "해외",
       "sector": "에너지 인프라",
-      "round": "미기재",
+      "round": "전략적 투자(지분 35%)",
       "note": "",
       "investors": "National Grid Ventures(리드)",
       "date": "2026.07.02",
       "usdM": 1750,
       "source": {
-        "name": "Value Add Pulse (Crunchbase 인용)",
-        "url": "https://valueaddvc.com/pulse/crunchbase-weekly-biggest-funding-rounds-joulent-2026-07-02"
+        "name": "Data Center Dynamics",
+        "url": "https://www.datacenterdynamics.com/en/news/national-grid-ventures-invests-175bn-in-joulent-for-35-stake-to-develop-large-load-power-solutions-national-grid-ventures-ngv-the-commercial-arm-of-national-grid-has-agreed-to-invest-175-billion-for-a-35-stake-in-us-power-infrastructure-develope/"
       }
     },
     {
@@ -120,14 +120,14 @@ window.KVW_ISSUES[12] = {
       "name": "8090 Solutions",
       "region": "해외",
       "sector": "에이전틱 AI 소프트웨어 개발",
-      "round": "미기재",
+      "round": "Series A",
       "note": "",
       "investors": "Salesforce Ventures(리드)",
       "date": "2026.07.02",
       "usdM": 135,
       "source": {
-        "name": "Value Add Pulse (Crunchbase 인용)",
-        "url": "https://valueaddvc.com/pulse/crunchbase-weekly-biggest-funding-rounds-joulent-2026-07-02"
+        "name": "Pulse 2.0",
+        "url": "https://pulse2.com/8090-raises-135-million-series-a-led-by-salesforce-ventures/"
       }
     },
     {

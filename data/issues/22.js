@@ -92,7 +92,7 @@ window.KVW_ISSUES[22] = {
       "name": "RentBetter",
       "region": "해외",
       "sector": "개인 임대인용 임대 관리 플랫폼(호주)",
-      "round": "미기재",
+      "round": "",
       "note": "",
       "investors": "EVP",
       "date": "2026.09.25",

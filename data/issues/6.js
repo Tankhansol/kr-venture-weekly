@@ -96,14 +96,14 @@ window.KVW_ISSUES[6] = {
       "name": "Blitzy",
       "region": "해외",
       "sector": "자율 코딩 에이전트",
-      "round": "미기재",
+      "round": "Growth Round",
       "note": "밸류 $1.4B",
       "investors": "Northzone(리드)",
       "date": "2026.05.05",
       "usdM": 200,
       "source": {
-        "name": "SiliconANGLE",
-        "url": "https://siliconangle.com/2026/05/05/blitzy-raises-200m-1-4b-valuation-deploy-thousands-coding-agents-parallel/"
+        "name": "Blitzy 보도자료 (Business Wire)",
+        "url": "https://www.businesswire.com/news/home/20260505342338/en/Blitzy-Raises-200-Million-at-1.4-Billion-Valuation"
       }
     },
     {

@@ -67,7 +67,7 @@ window.KVW_ISSUES[13] = {
       "name": "Proxima Fusion",
       "region": "해외",
       "sector": "핵융합 에너지",
-      "round": "미기재",
+      "round": "",
       "note": "밸류 €2.4B($2.7B)",
       "investors": "XTX Ventures·East X Ventures(리드), Google·RWE(전략적 투자)",
       "date": "2026.07.07",

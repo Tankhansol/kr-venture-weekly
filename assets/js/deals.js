@@ -33,7 +33,7 @@
     var isNew = D.isNew(d, A.latest);
     return '<tr' + (isNew ? ' class="is-new"' : '') + '><td class="co">' + esc(d.name) +
       '<span class="nt">' + esc(d.region) + ' · ' + esc(d.sector) + '</span><span class="cat-tag">' + esc(d.cat) + '</span></td>' +
-      '<td style="white-space:nowrap">' + esc(d.round) + '</td>' +
+      '<td style="white-space:nowrap">' + (d.round ? esc(d.round) : '—') + '</td>' +
       '<td class="num r" style="white-space:nowrap">' + esc(C.fmtDealAmount(d)) + (d.note ? '<span class="nt">' + esc(d.note) + '</span>' : '') + '</td>' +
       '<td>' + esc(d.investors) + '</td>' +
       '<td style="white-space:nowrap"><span class="num">' + (d.date ? esc(d.date) : '—') + '</span>' + (src ? '<span class="nt">' + src + '</span>' : '') + '</td>' +

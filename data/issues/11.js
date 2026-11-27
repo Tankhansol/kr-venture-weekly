@@ -90,21 +90,21 @@ window.KVW_ISSUES[11] = {
       "name": "Baseten",
       "region": "해외",
       "sector": "AI 추론 라우팅",
-      "round": "미기재",
+      "round": "Series F",
       "note": "보도 기준, 밸류 $11B·$13B 두 단계",
-      "investors": "Altimeter Capital·Conviction 등(공동 리드, 보도)",
+      "investors": "Altimeter Capital·Conviction·Spark Capital(리드), Sands Capital·Wellington(공동 리드)",
       "date": "2026.06.18",
       "usdM": 1500,
       "source": {
-        "name": "KuCoin News (CryptoBriefing 인용)",
-        "url": "https://www.kucoin.com/news/flash/baseten-secures-1-5b-funding-valuation-hits-13b"
+        "name": "Baseten 공식 블로그",
+        "url": "https://baseten.co/blog/announcing-our-series-f/"
       }
     },
     {
       "name": "AppsFlyer",
       "region": "해외",
       "sector": "마케팅 측정 인프라",
-      "round": "미기재",
+      "round": "구주·신주 소수지분 투자",
       "note": "대부분 구주 매입(지분 48%), 보도 기준 $1.3B·밸류 $2.7B",
       "investors": "Moloco(리드)·Google·Meta·Unity",
       "date": "2026.06.22",
@@ -118,7 +118,7 @@ window.KVW_ISSUES[11] = {
       "name": "Groq",
       "region": "해외",
       "sector": "AI 추론 칩·클라우드",
-      "round": "미기재",
+      "round": "",
       "note": "Nvidia와 $20B 라이선스·인력 이동 계약 이후 조달",
       "investors": "Disruptive·Infinitum(공동 리드)",
       "date": "2026.06.22",

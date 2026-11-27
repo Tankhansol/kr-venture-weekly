@@ -33,8 +33,8 @@
     var list = (I.figures || []).slice();
     if (!I.figures) {
       var dm = biggest('국내'), gl = biggest('해외');
-      if (dm) list.push({ label: '국내 최대 딜', value: C.fmtDealAmount(dm.d), note: dm.d.name + ' · ' + dm.d.round });
-      if (gl) list.push({ label: '해외 최대 딜', value: C.fmtDealAmount(gl.d), note: gl.d.name + ' · ' + gl.d.round });
+      if (dm) list.push({ label: '국내 최대 딜', value: C.fmtDealAmount(dm.d), note: dm.d.name + (dm.d.round ? ' · ' + dm.d.round : '') });
+      if (gl) list.push({ label: '해외 최대 딜', value: C.fmtDealAmount(gl.d), note: gl.d.name + (gl.d.round ? ' · ' + gl.d.round : '') });
     }
     list.push({ label: 'Weekly Deals', value: cnt.total + '건', note: cnt.label });
     var cols = Math.min(Math.max(list.length, 2), 4);
@@ -71,7 +71,7 @@
           (d.source && d.source.name ? esc(d.source.name) + ' <span class="pending">[URL 확인 필요]</span>' : '<span class="pending">[확인 필요]</span>');
         var dateTxt = d.date ? esc(d.date) : '—';
         return '<tr><td class="co">' + esc(d.name) + '<span class="nt">' + esc(d.region) + '</span></td>' +
-          '<td>' + esc(d.sector) + '</td><td style="white-space:nowrap">' + esc(d.round) + '</td>' +
+          '<td>' + esc(d.sector) + '</td><td style="white-space:nowrap">' + (d.round ? esc(d.round) : '—') + '</td>' +
           '<td class="num r" style="white-space:nowrap">' + esc(C.fmtDealAmount(d)) + (d.note ? '<span class="nt">' + esc(d.note) + '</span>' : '') + '</td>' +
           '<td>' + esc(d.investors) + '</td>' +
           '<td style="white-space:nowrap"><span class="num">' + dateTxt + '</span><span class="nt">' + src + '</span></td></tr>';

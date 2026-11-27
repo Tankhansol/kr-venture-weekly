@@ -58,12 +58,12 @@ window.KVW_ISSUES[19] = {
       "sector": "로봇용 칩·개발 플랫폼(중국)",
       "round": "Series C",
       "note": "",
-      "investors": "원문 미기재",
+      "investors": "글로벌 인터넷 기업(사명 비공개)·기존 주주 등",
       "date": "2026.09.18",
       "usdM": 400,
       "source": {
-        "name": "TechNode",
-        "url": "https://technode.com/2026/09/18/d-robotics-raises-400-million-in-series-c-funding/"
+        "name": "Pulse 2.0",
+        "url": "https://pulse2.com/d-robotics-raises-400-million-series-c-as-sunrise-chip-shipments-top-8-million/"
       }
     }
   ],

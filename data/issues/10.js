@@ -84,14 +84,14 @@ window.KVW_ISSUES[10] = {
       "name": "Baseten",
       "region": "해외",
       "sector": "AI 추론 라우팅",
-      "round": "미기재",
+      "round": "Series F",
       "note": "보도 기준, 밸류 $11B·$13B 두 단계",
-      "investors": "Altimeter Capital·Conviction 등(공동 리드, 보도)",
+      "investors": "Altimeter Capital·Conviction·Spark Capital(리드), Sands Capital·Wellington(공동 리드)",
       "date": "2026.06.18",
       "usdM": 1500,
       "source": {
-        "name": "KuCoin News (CryptoBriefing 인용)",
-        "url": "https://www.kucoin.com/news/flash/baseten-secures-1-5b-funding-valuation-hits-13b"
+        "name": "Baseten 공식 블로그",
+        "url": "https://baseten.co/blog/announcing-our-series-f/"
       }
     },
     {

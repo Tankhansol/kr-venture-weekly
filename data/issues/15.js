@@ -45,12 +45,12 @@ window.KVW_ISSUES[15] = {
       "sector": "로봇 월드 모델(중국)",
       "round": "Series A/A+",
       "note": "원문 표기 \"약 $150M\"",
-      "investors": "원문 미기재",
+      "investors": "Dunhong Asset(리드), 저장대 과기혁신그룹 등 국유 투자 플랫폼, Creation Ventures(기존)",
       "date": "2026.08.18",
       "usdM": 150,
       "source": {
-        "name": "AF.NET",
-        "url": "https://af.net/realtime/infiforce-secures-150m-to-advance-ego-native-world-model-for-robotics/"
+        "name": "Gasgoo",
+        "url": "https://autonews.gasgoo.com/articles/news/another-embodied-intelligence-company-secures-funding-infiforce-closes-nearly-rmb-1-billion-series-aa-round-2088201248296951808"
       }
     },
     {
