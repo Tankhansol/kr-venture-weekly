@@ -1,6 +1,6 @@
 /*
  * 계산 로직 단독 검증 — 실행: node tests/calc.test.js
- * 1) 26.9 기대값 대조  2) 부수기(빈칸·분모 0·경계·문자·극단값)  3) 데이터 합계 점검
+ * 1) 26.10 기대값 대조  2) 부수기(빈칸·분모 0·경계·문자·극단값)  3) 데이터 합계 점검
  * 실패가 있으면 종료 코드 1
  */
 'use strict';
@@ -19,29 +19,29 @@ function clone(o) { return JSON.parse(JSON.stringify(o)); }
 
 // 1. 기대값 (요청서 6-3)
 var R = C.computeMonthly(M);
-eq('신규투자 조 원', R.big[0].value, '6.4');
-eq('신규투자 증감률(원자료)', R.big[0].delta, '+34.6%');
-eq('조합결성 조 원', R.big[1].value, '6.7');
-eq('조합결성 증감률(원자료)', R.big[1].delta, '+31.0%');
-eq('운영 약정액 조 원', R.big[2].value, '71.8');
-eq('운영 약정액 증감률', R.big[2].delta, '+9.9%*');
-eq('벤처투자회사', R.big[3].value, '259');
-eq('기업당 평균', R.derived[0].value, '34.5억 원');
-eq('기업당 평균 전년동기', R.derived[0].sub, '전년동기 27.6억 원 대비 +24.7%');
-eq('조합당 평균', R.derived[1].value, '264.6억 원');
-eq('조합당 평균 전년동기', R.derived[1].sub, '전년동기 262.0억 원 대비 +1.0%');
-eq('달성률 투자', R.derived[2].value, '투자 94.6%');
-eq('달성률 결성', R.derived[2].sub, '조합결성 87.4%');
-eq('누계 투자', R.derived[3].value, '투자 32.0조 원');
-eq('누계 결성', R.derived[3].sub, '조합결성 38.1조 원');
+eq('신규투자 조 원', R.big[0].value, '7.1');
+eq('신규투자 증감률(원자료)', R.big[0].delta, '+30.2%');
+eq('조합결성 조 원', R.big[1].value, '7.5');
+eq('조합결성 증감률(원자료)', R.big[1].delta, '+32.5%');
+eq('운영 약정액 조 원', R.big[2].value, '72.3');
+eq('운영 약정액 증감률', R.big[2].delta, '+9.8%*');
+eq('벤처투자회사', R.big[3].value, '260');
+eq('기업당 평균', R.derived[0].value, '34.3억 원');
+eq('기업당 평균 전년동기', R.derived[0].sub, '전년동기 28.3억 원 대비 +21.0%');
+eq('조합당 평균', R.derived[1].value, '259.6억 원');
+eq('조합당 평균 전년동기', R.derived[1].sub, '전년동기 250.4억 원 대비 +3.7%');
+eq('달성률 투자', R.derived[2].value, '투자 104.0%');
+eq('달성률 결성', R.derived[2].sub, '조합결성 98.2%');
+eq('누계 투자', R.derived[3].value, '투자 32.7조 원');
+eq('누계 결성', R.derived[3].sub, '조합결성 38.9조 원');
 eq('업종 증감률', R.sectors.map(function (s) { return s.yoy; }).join(' '),
-  '+30.0%* +67.0%* +33.4%* +22.6%* +147.2%* −3.8%*');
-eq('상위 10개사 합계', R.topSum, '6,222');
-eq('연도별 기업당 평균', R.rows.map(function (r) { return r.perCo; }).join(' '), '27.3 23.7 26.6 28.7 27.6 34.5');
-eq('연도별 조합당 평균', R.rows.map(function (r) { return r.perFund; }).join(' '), '291.4 234.9 204.9 248.0 262.0 264.6');
-eq('연도별 운영 약정액', R.rows.map(function (r) { return r.aum; }).join(' '), '51.3 56.6 60.8 67.1 65.3 71.8');
-eq('기간 표시 누계', R.labels.ytd, '1~9월 누계');
-eq('기간 표시 당월', R.labels.monthOnly, '9월 당월');
+  '+26.0%* +28.3%* +59.4%* +32.3%* +87.1%* −3.3%*');
+eq('상위 10개사 합계', R.topSum, '4,765');
+eq('연도별 기업당 평균', R.rows.map(function (r) { return r.perCo; }).join(' '), '27.3 23.7 26.6 28.7 28.3 34.3');
+eq('연도별 조합당 평균', R.rows.map(function (r) { return r.perFund; }).join(' '), '291.4 234.9 204.9 248.1 250.4 259.6');
+eq('연도별 운영 약정액', R.rows.map(function (r) { return r.aum; }).join(' '), '51.3 56.6 60.8 67.1 65.8 72.3');
+eq('기간 표시 누계', R.labels.ytd, '1~10월 누계');
+eq('기간 표시 당월', R.labels.monthOnly, '10월 당월');
 eq('데이터 점검 경고 없음', R.checks.length, 0);
 
 // 금액 표기 규칙
@@ -94,17 +94,17 @@ eq('음수 결성액 막대', RB.topRows[0].bar, 0);
 // 2-6 일부만 입력 (C-2): 연도 개수 불일치 → 경고
 var P = clone(M); P.funds.pop();
 eq('일부 입력 → 경고', C.computeMonthly(P).checks.length > 0, true);
-var Q = clone(M); Q.sectors[0].amt += 2; // 합계 64,420: 총액과 3억 원 차이
-eq('업종 합계 3억 원 차이 → 경고', C.computeMonthly(Q).checks.length > 0, true);
-var Q2 = clone(M); Q2.sectors[0].amt += 1; // 합계 64,419: 2억 원 차이(경계)
-eq('업종 합계 2억 원 차이 → 경고 없음', C.computeMonthly(Q2).checks.length, 0);
+var Q = clone(M); Q.sectors[0].amt += 2; // 총액과 2억 원 차이(경계)
+eq('업종 합계 2억 원 차이 → 경고 없음', C.computeMonthly(Q).checks.length, 0);
+var Q2 = clone(M); Q2.sectors[0].amt += 3; // 총액과 3억 원 차이
+eq('업종 합계 3억 원 차이 → 경고', C.computeMonthly(Q2).checks.length > 0, true);
 
 // 3. 합계 점검 (원자료 대사)
-eq('업종 합계 64,418 (원자료 반올림, 총액 64,417과 1억 원 차이)', C.sum(M.sectors.map(function (s) { return s.amt; })), 64418);
-eq('업력 26.9 합 100', Math.round((M.stages[0].early + M.stages[0].mid + M.stages[0].late) * 10) / 10, 100);
-eq('LP 합 100.2 (원자료 반올림)', Math.round(C.sum(M.lps.map(function (x) { return x.pct; })) * 10) / 10, 100.2);
+eq('업종 합계 = 총액', C.sum(M.sectors.map(function (s) { return s.amt; })), M.invest[5]);
+eq('업력 26.10 합 100', Math.round((M.stages[0].early + M.stages[0].mid + M.stages[0].late) * 10) / 10, 100);
+eq('LP 합 100', Math.round(C.sum(M.lps.map(function (x) { return x.pct; })) * 10) / 10, 100);
 eq('회수 합 100', Math.round(C.sum(M.exits.map(function (x) { return x.pct; })) * 10) / 10, 100);
-eq('투자 유형 합 99.9 (원자료 반올림)', Math.round(C.sum(M.types.map(function (x) { return x.pct; })) * 10) / 10, 99.9);
+eq('투자 유형 합 100', Math.round(C.sum(M.types.map(function (x) { return x.pct; })) * 10) / 10, 100);
 
 console.log('통과 ' + passes + '건, 결함 ' + fails.length + '건');
 fails.forEach(function (f) { console.log('  결함: ' + f); });
