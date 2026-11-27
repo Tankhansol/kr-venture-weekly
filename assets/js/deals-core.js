@@ -31,9 +31,13 @@
     return m[1] + p(m[2]) + p(m[3]);
   }
 
+  function nameKey(name) { return str(name).toLowerCase().replace(/\s+/g, ''); }
+
   // issuesMap: { no: issueData }. 반환: 합친 딜 목록. 각 딜에 issues[](오름차순) 부여
   // 같은 딜이 여러 호에 실리면 가장 최근 호의 기록을 대표로 쓴다
-  function build(issuesMap) {
+  // sectorMap: { 기업명키: 섹터 } (data/deal-sectors.js). 딜 데이터의 cat 값이 우선, 없으면 '미분류'
+  function build(issuesMap, sectorMap) {
+    sectorMap = sectorMap || {};
     var nos = Object.keys(issuesMap || {}).map(Number).filter(function (n) { return isFinite(n); }).sort(function (a, b) { return a - b; });
     var byKey = {}, order = [];
     nos.forEach(function (no) {
@@ -53,7 +57,7 @@
       var r = byKey[k], d = r.deal;
       return {
         key: k, name: str(d.name).trim(), region: d.region === '해외' ? '해외' : '국내',
-        sector: str(d.sector), round: str(d.round), krw: numOrNull(d.krw), usdM: numOrNull(d.usdM),
+        sector: str(d.sector), cat: str(d.cat).trim() || str(sectorMap[nameKey(d.name)]).trim() || '미분류', round: str(d.round), krw: numOrNull(d.krw), usdM: numOrNull(d.usdM),
         amountText: d.amountText ? str(d.amountText) : '', note: str(d.note), investors: str(d.investors),
         date: str(d.date), source: d.source || null, issues: r.issues, latestIssue: r.issues[r.issues.length - 1]
       };
@@ -90,23 +94,42 @@
     return byDate(a, b);
   }
 
-  // opts: { q, region: '전체'|'국내'|'해외', sort: 'date'|'amount' }
+  // opts: { q, region: '전체'|'국내'|'해외', cat: '전체'|섹터명, latest: 최신호 번호, onlyNew: bool, sort: 'date'|'amount' }
+  // 잘못된 region·cat 값은 '전체'로 처리
+  function normRegion(r) { return r === '국내' || r === '해외' ? r : '전체'; }
+  function isNew(d, latest) { return latest !== undefined && latest !== null && d.issues.indexOf(Number(latest)) !== -1; }
   function query(list, opts) {
     opts = opts || {};
     var term = str(opts.q).trim().toLowerCase();
-    var region = opts.region === '국내' || opts.region === '해외' ? opts.region : '전체';
+    var region = normRegion(opts.region);
+    var cat = str(opts.cat).trim() || '전체';
     var out = (list || []).filter(function (d) {
-      return (region === '전체' || d.region === region) && matches(d, term);
+      return (region === '전체' || d.region === region) &&
+        (cat === '전체' || d.cat === cat) &&
+        (!opts.onlyNew || isNew(d, opts.latest)) && matches(d, term);
     });
     out.sort(opts.sort === 'amount' ? byAmount : byDate);
     return out;
   }
 
-  function counts(list) {
-    var c = { total: 0, domestic: 0, global: 0 };
-    (list || []).forEach(function (d) { c.total++; if (d.region === '해외') c.global++; else c.domestic++; });
+  function counts(list, latest) {
+    var c = { total: 0, domestic: 0, global: 0, latest: 0 };
+    (list || []).forEach(function (d) {
+      c.total++; if (d.region === '해외') c.global++; else c.domestic++;
+      if (isNew(d, latest)) c.latest++;
+    });
     return c;
   }
 
-  return { build: build, query: query, counts: counts, dealKey: dealKey, dateKey: dateKey, amountValue: amountValue };
+  // 섹터 칩 건수: 섹터 외 다른 조건(지역·신규·검색)을 적용한 뒤 섹터별로 센다
+  function catCounts(list, opts, cats) {
+    var base = query(list, { q: opts && opts.q, region: opts && opts.region, onlyNew: opts && opts.onlyNew, latest: opts && opts.latest });
+    var c = { '전체': base.length };
+    (cats || []).forEach(function (k) { c[k] = 0; });
+    base.forEach(function (d) { c[d.cat] = (c[d.cat] || 0) + 1; });
+    return c;
+  }
+
+  return { build: build, query: query, counts: counts, catCounts: catCounts, nameKey: nameKey, isNew: isNew,
+    dealKey: dealKey, dateKey: dateKey, amountValue: amountValue };
 });

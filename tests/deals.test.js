@@ -77,13 +77,35 @@ ok(r1 === 'C,A,B' && r1 === r2, '동점: 최근 호 → 기업명, 입력 순서
 var before = names(all); D.query(all, { sort: 'amount' });
 ok(names(all) === before, '원본 배열 순서 불변');
 
+// 7-2. 섹터·신규 필터 (C-1·C-6)
+var SM = { alpha: 'AI', '가나': '로봇' };
+var cs = D.build(S, SM);
+ok(cs.filter(function (d) { return d.name.toLowerCase() === 'alpha'; })[0].cat === 'AI', '섹터 지도 적용(대소문자·공백 무시)');
+ok(cs.filter(function (d) { return d.name === 'Beta'; })[0].cat === '미분류', '섹터 지도 누락 → 미분류');
+var inl = D.build({ 9: { deals: [{ name: 'alpha', region: '해외', usdM: 1, cat: '직접값' }] } }, SM);
+ok(inl[0].cat === '직접값', '딜 데이터의 cat 값이 지도보다 우선');
+ok(names(D.query(cs, { cat: '로봇' })) === '가나', '섹터 필터');
+ok(D.query(cs, { cat: '없는섹터' }).length === 0, '존재하지 않는 섹터 → 0건(화면은 주소값 검증으로 차단)');
+ok(D.query(cs, { cat: '' }).length === 5 && D.query(cs, { cat: '   ' }).length === 5, '빈 섹터 값 = 전체');
+ok(names(D.query(cs, { onlyNew: true, latest: 2, sort: 'date' })) === '다라,alpha,Beta,Gamma', '최신호 신규만(2호 수록분, 1·2호 중복 딜 포함)');
+ok(D.query(cs, { onlyNew: true }).length === 0, '최신호 번호 없이 신규만 → 0건');
+ok(D.query(cs, { onlyNew: true, latest: 99 }).length === 0, '없는 호 번호 → 0건');
+var cc = D.catCounts(cs, { region: '국내' }, ['AI', '로봇']);
+ok(cc['전체'] === 2 && cc['로봇'] === 1 && cc['AI'] === 0 && cc['미분류'] === 1, '섹터 건수는 지역 필터 반영', JSON.stringify(cc));
+ok(D.counts(cs, 2).latest === 4 && D.counts(cs).latest === 0, '최신호 신규 건수');
+
 // 8. 실제 데이터 전체 (data/issues/*.js)
 var ctx = { window: {} }; vm.createContext(ctx);
 var dir = path.join(__dirname, '..', 'data', 'issues');
 fs.readdirSync(dir).filter(function (f) { return /^\d+\.js$/.test(f); }).forEach(function (f) {
   vm.runInContext(fs.readFileSync(path.join(dir, f), 'utf8'), ctx);
 });
-var real = D.build(ctx.window.KVW_ISSUES), rawCount = 0;
+vm.runInContext(fs.readFileSync(path.join(__dirname, '..', 'data', 'deal-sectors.js'), 'utf8'), ctx);
+var real = D.build(ctx.window.KVW_ISSUES, ctx.window.KVW_DEAL_SECTOR_MAP), rawCount = 0;
+var CATS = ctx.window.KVW_DEAL_CATS || [];
+var unc = real.filter(function (d) { return CATS.indexOf(d.cat) === -1; });
+ok(unc.length === 0, '실데이터 전 딜 섹터 분류(7개 중 하나)', unc.map(function (d) { return d.name + '=' + d.cat; }).join(', '));
+ok(CATS.length === 7, '섹터 7개', CATS.length);
 Object.keys(ctx.window.KVW_ISSUES).forEach(function (k) { rawCount += (ctx.window.KVW_ISSUES[k].deals || []).length; });
 ok(real.length > 0 && real.length <= rawCount, '실데이터 병합 건수 ≤ 원 건수', real.length + '/' + rawCount);
 ok(real.every(function (d) { return d.issues.length >= 1; }), '모든 딜에 수록 호 존재');
